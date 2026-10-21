@@ -1,0 +1,376 @@
+@prefix mfh:   <https://w3id.org/mafahim/ontology#> .
+@prefix st:    <http://www.semantictafsir.com/ontology/> .
+@prefix sh:    <http://www.semantichadith.com/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+
+# Mafāhīm: Ontologie der Koranbegriffe in den Tefsiren der Gelehrten der Umma
+# Entwurf v0.1.0, 21.10.2026. Die w3id-Adresse ist noch nicht registriert.
+# Grundlage: SemanticTafsir (MIT). Diese Erweiterung: CC BY 4.0.
+
+<https://w3id.org/mafahim/ontology>
+    a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/mafahim/ontology/0.1.0> ;
+    owl:versionInfo "0.1.0 (draft)" ;
+    vann:preferredNamespacePrefix "mfh" ;
+    vann:preferredNamespaceUri "https://w3id.org/mafahim/ontology#" ;
+    dct:modified "2026-10-21"^^xsd:date ;
+    dct:source <https://github.com/talhaahmed884/SemanticTafsirKG> ;
+    rdfs:seeAlso <https://github.com/kuersatcifci/mafahim> ;
+    dct:description "Ontology for classical Quran commentaries (tafsir): works and editions, source-anchored statement units, cross-work interpretations and questions, concepts in their lived meaning (mafhūm), and review status. Extends SemanticTafsir."@en ;
+    dct:title "مفاهيم القرآن في تفاسير علماء الأمة"@ar ,
+              "Mafāhīm: Quranic concepts in classical tafsir"@en ,
+              "Mafāhīm: Kur'an kavramları klasik tefsirlerde"@tr ,
+              "Mafāhīm: Koranbegriffe in den klassischen Tefsiren"@de ;
+    dct:creator "Kürşat Çifçi" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:created "2026-10-19"^^xsd:date ;
+    rdfs:comment "Erweitert SemanticTafsir um mehrere Werke, zerlegte Aussage-Einheiten, werkübergreifende Deutungen, gelebte Begriffe (Mafhûm) und Prüfvermerke."@de .
+
+#################################################################
+# Ebene 1: Koran
+#################################################################
+
+mfh:Sure a owl:Class ;
+    rdfs:label "سورة"@ar , "Sure"@tr , "Surah"@en , "Sure"@de .
+
+mfh:Vers a owl:Class ;
+    owl:equivalentClass st:Verse ;
+    rdfs:label "آية"@ar , "Âyet"@tr , "Verse"@en , "Vers"@de .
+
+mfh:Versabschnitt a owl:Class ;
+    rdfs:subClassOf st:VerseFragment ;
+    rdfs:label "مقطع من آية"@ar , "Âyet bölümü"@tr , "Verse segment"@en , "Versabschnitt"@de ;
+    rdfs:comment "Wortbereich innerhalb eines Verses, Wörter nach QUL-Morphologie gezählt."@de .
+
+mfh:sure a owl:ObjectProperty ;
+    rdfs:label "surah"@en , "Sure"@de , "sûre"@tr , "السورة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Vers ; rdfs:range mfh:Sure .
+mfh:vers a owl:ObjectProperty ;
+    rdfs:label "verse"@en , "Vers"@de , "âyet"@tr , "الآية"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Versabschnitt ; rdfs:range mfh:Vers .
+mfh:surenNr a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "surah number"@en , "Surennummer"@de , "sûre numarası"@tr , "رقم السورة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:range xsd:positiveInteger .
+mfh:versNr a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "verse number"@en , "Versnummer"@de , "âyet numarası"@tr , "رقم الآية"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:range xsd:positiveInteger .
+mfh:wortVon a owl:DatatypeProperty ;
+    rdfs:label "first word"@en , "erstes Wort"@de , "ilk kelime"@tr , "الكلمة الأولى"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Versabschnitt ; rdfs:range xsd:positiveInteger .
+mfh:wortBis a owl:DatatypeProperty ;
+    rdfs:label "last word"@en , "letztes Wort"@de , "son kelime"@tr , "الكلمة الأخيرة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Versabschnitt ; rdfs:range xsd:positiveInteger .
+
+#################################################################
+# Ebene 2: Werk
+#################################################################
+
+mfh:Person a owl:Class ;
+    owl:equivalentClass st:Person ;
+    rdfs:label "شخص"@ar , "Şahıs"@tr , "Person"@en , "Person"@de .
+
+mfh:Muefessir a owl:Class ;
+    rdfs:subClassOf mfh:Person ;
+    rdfs:label "مفسّر"@ar , "Müfessir"@tr , "Exegete"@en , "Exeget"@de .
+
+mfh:Werk a owl:Class ;
+    rdfs:label "كتاب"@ar , "Eser"@tr , "Work"@en , "Werk"@de .
+
+mfh:Tefsir a owl:Class ; rdfs:subClassOf mfh:Werk ;
+    rdfs:label "تفسير"@ar , "Tefsir"@tr , "Tafsir"@en , "Tefsir"@de .
+
+mfh:AhlakWerk a owl:Class ; rdfs:subClassOf mfh:Werk ;
+    rdfs:label "كتاب في الأخلاق والتزكية"@ar , "Ahlak/tasavvuf eseri"@tr , "Ethics/spirituality work"@en , "Ahlak-/Tasavvuf-Werk"@de ;
+    rdfs:comment "Nach Begriffen statt nach Versen geordnet, z. B. İhyâ, Medâricü's-Sâlikîn, Risâle."@de .
+
+mfh:Ausgabe a owl:Class ;
+    rdfs:label "نسخة رقمية"@ar , "Dijital nüsha"@tr , "Digital edition"@en , "Digitale Ausgabe"@de .
+
+mfh:Eintrag a owl:Class ;
+    rdfs:subClassOf st:Commentary ;
+    rdfs:label "مدخل"@ar , "Kayıt"@tr , "Entry"@en , "Eintrag"@de ;
+    rdfs:comment "Text eines Werks zu einem Versbereich (Tefsir) oder Kapitel (Ahlak-Werk)."@de .
+
+mfh:Hasiye a owl:Class ;
+    rdfs:label "حاشية"@ar , "Hâşiye"@tr , "Gloss"@en , "Randkommentar"@de ;
+    rdfs:comment "Klassischer Randkommentar zu einem Werk, z. B. İbn el-Müneyyirs el-İntisâf zum Keşşâf."@de .
+
+mfh:verfasstVon a owl:ObjectProperty ;
+    rdfs:label "written by"@en , "verfasst von"@de , "müellifi"@tr , "مؤلّفه"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Werk ; rdfs:range mfh:Person .
+mfh:ausgabeVon a owl:ObjectProperty ;
+    rdfs:label "edition of"@en , "Ausgabe von"@de , "nüshası olduğu eser"@tr , "نسخة من"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Ausgabe ; rdfs:range mfh:Werk .
+mfh:eintragAus a owl:ObjectProperty ;
+    rdfs:label "entry from"@en , "Eintrag aus"@de , "ait olduğu nüsha"@tr , "مدخل من"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Eintrag ; rdfs:range mfh:Ausgabe .
+mfh:erklaert a owl:ObjectProperty ;
+    rdfs:label "explains"@en , "erklärt"@de , "açıkladığı âyet"@tr , "يفسّر"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Eintrag ; rdfs:range mfh:Vers .
+mfh:kapitel a owl:DatatypeProperty ;
+    rdfs:label "chapter"@en , "Kapitel"@de , "bölüm"@tr , "الباب"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Eintrag ; rdfs:range xsd:string .
+mfh:hatHasiye a owl:ObjectProperty ;
+    rdfs:label "has gloss"@en , "hat Randkommentar"@de , "hâşiyesi"@tr , "له حاشية"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Eintrag ; rdfs:range mfh:Hasiye .
+
+mfh:todesjahrHicri a owl:DatatypeProperty ;
+    rdfs:label "death year (Hijri)"@en , "Todesjahr (Hidschri)"@de , "vefat yılı (hicrî)"@tr , "سنة الوفاة (هجري)"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Person ; rdfs:range xsd:integer .
+mfh:todesjahrMiladi a owl:DatatypeProperty ;
+    rdfs:label "death year (CE)"@en , "Todesjahr (n. Chr.)"@de , "vefat yılı (milâdî)"@tr , "سنة الوفاة (ميلادي)"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Person ; rdfs:range xsd:integer .
+mfh:gemeinfreiBegruendung a owl:DatatypeProperty ;
+    rdfs:label "public domain rationale"@en , "Begründung für Gemeinfreiheit"@de , "serbest kullanım gerekçesi"@tr , "سبب الإتاحة العامة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Ausgabe ; rdfs:range xsd:string ;
+    rdfs:comment "Pflichtfeld: der Satz, warum die Ausgabe frei ist."@de .
+mfh:vollstaendig a owl:DatatypeProperty ;
+    rdfs:label "complete"@en , "vollständig"@de , "tam"@tr , "كامل"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Eintrag ; rdfs:range xsd:boolean ;
+    rdfs:comment "false, wenn die Quelle selbst eine Kürzung vermerkt."@de .
+
+# Gattung und Richtung als SKOS-Listen
+mfh:Gattung a skos:ConceptScheme ;
+    rdfs:label "أنواع التفسير"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:label "Gattung"@de , "Tür"@tr , "Genre"@en .
+mfh:gattung a owl:ObjectProperty ;
+    rdfs:label "genre"@en , "Gattung"@de , "tür"@tr , "النوع"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Werk ; rdfs:range skos:Concept .
+mfh:rivaye    a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "rivâye"@tr , "Überlieferung"@de , "transmission-based"@en , "بالمأثور"@ar .
+mfh:diraye    a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "dirâye"@tr , "Abwägung"@de , "reasoning-based"@en , "بالرأي"@ar .
+mfh:ahkam     a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "ahkâm"@tr , "Recht"@de , "legal"@en , "أحكام"@ar .
+mfh:lugavi    a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "lugavî"@tr , "Sprache"@de , "linguistic"@en , "لغوي"@ar .
+mfh:isari     a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "işârî"@tr , "mystisch"@de , "allusive"@en , "إشاري"@ar .
+mfh:kelam     a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "kelâm"@tr , "Glaubenslehre"@de , "theological"@en , "كلامي"@ar .
+mfh:munasebet a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "münâsebet"@tr , "Zusammenhang"@de , "coherence"@en , "مناسبات"@ar .
+mfh:ahlak     a skos:Concept ; skos:inScheme mfh:Gattung ; skos:prefLabel "ahlâk / tasavvuf"@tr , "Ethik / Spiritualität"@de , "ethics / spirituality"@en , "أخلاق وتزكية"@ar .
+
+mfh:Richtung a skos:ConceptScheme ;
+    rdfs:label "المذاهب"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:label "Richtung"@de , "Ekol"@tr , "School"@en .
+mfh:richtung a owl:ObjectProperty ;
+    rdfs:label "school"@en , "Richtung"@de , "ekol"@tr , "المذهب"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:range skos:Concept ;
+    rdfs:comment "Bei Werk und Person. Wird in jeder Ansicht und jeder MCP-Antwort angezeigt."@de .
+mfh:sunni    a skos:Concept ; skos:inScheme mfh:Richtung ; skos:prefLabel "sünnî"@tr , "sunnitisch"@de , "Sunni"@en , "سني"@ar .
+mfh:siiImami a skos:Concept ; skos:inScheme mfh:Richtung ; skos:prefLabel "şîî imâmî"@tr , "schiitisch-imamitisch"@de , "Shia Imami"@en , "شيعي إمامي"@ar .
+mfh:mutezili a skos:Concept ; skos:inScheme mfh:Richtung ; skos:prefLabel "mu'tezilî"@tr , "mutazilitisch"@de , "Muʿtazili"@en , "معتزلي"@ar .
+mfh:zeydi    a skos:Concept ; skos:inScheme mfh:Richtung ; skos:prefLabel "zeydî"@tr , "zaiditisch"@de , "Zaydi"@en , "زيدي"@ar .
+
+#################################################################
+# Ebene 3: Inhalt (Einheit)
+#################################################################
+
+mfh:Einheit a owl:Class ;
+    rdfs:label "وحدة"@ar , "Birim"@tr , "Unit"@en , "Einheit"@de ;
+    rdfs:comment "Eine Aussage mit genau einer Funktion innerhalb eines Eintrags. Ohne Textanker keine Einheit."@de .
+
+mfh:ausEintrag a owl:ObjectProperty ;
+    rdfs:label "from entry"@en , "aus Eintrag"@de , "ait olduğu kayıt"@tr , "من المدخل"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range mfh:Eintrag .
+mfh:ankerVon a owl:DatatypeProperty ;
+    rdfs:label "anchor start"@en , "Anker Beginn"@de , "metin çapası başı"@tr , "بداية الموضع"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range xsd:nonNegativeInteger ;
+    rdfs:comment "Zeichenposition im bereinigten Eintragstext (Beginn)."@de .
+mfh:ankerBis a owl:DatatypeProperty ;
+    rdfs:label "anchor end"@en , "Anker Ende"@de , "metin çapası sonu"@tr , "نهاية الموضع"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range xsd:nonNegativeInteger .
+mfh:wortlaut a owl:DatatypeProperty ;
+    rdfs:label "original wording"@en , "Wortlaut"@de , "asıl metin"@tr , "النص الأصلي"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range rdf:langString ;
+    rdfs:comment "Arabischer Originalwortlaut der Einheit."@de .
+mfh:zusammenfassung a owl:DatatypeProperty ;
+    rdfs:label "summary"@en , "Zusammenfassung"@de , "özet"@tr , "ملخّص"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range rdf:langString ;
+    rdfs:comment "Kurzfassung in tr, en, de. Immer mit Prüfvermerk."@de .
+mfh:betrifft a owl:ObjectProperty ;
+    rdfs:label "concerns"@en , "betrifft"@de , "ilgili olduğu yer"@tr , "يتعلّق بـ"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ;
+    rdfs:comment "Vers oder Versabschnitt."@de .
+mfh:zugeschrieben a owl:ObjectProperty ;
+    rdfs:label "attributed to"@en , "zugeschrieben"@de , "nisbet edilen"@tr , "منسوب إلى"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range mfh:Person ;
+    rdfs:comment "Wer die Aussage gemacht hat (z. B. İbn Abbas), nicht der Müfessir, der sie aufschreibt."@de .
+mfh:hatKette a owl:ObjectProperty ;
+    rdfs:label "has chain of transmission"@en , "hat Überliefererkette"@de , "isnadı"@tr , "له إسناد"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range sh:NarratorChain .
+mfh:zitiert a owl:ObjectProperty ;
+    rdfs:label "cites"@en , "zitiert"@de , "alıntıladığı eser"@tr , "ينقل عن"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range mfh:Werk .
+mfh:stellung a owl:ObjectProperty ;
+    rdfs:label "stance"@en , "Stellung"@de , "tutum"@tr , "الموقف"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range skos:Concept .
+
+mfh:Einheitstyp a skos:ConceptScheme ;
+    rdfs:label "أنواع الوحدات"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:label "Einheitstyp"@de , "Birim türü"@tr , "Unit type"@en .
+mfh:typ a owl:ObjectProperty ;
+    rdfs:label "unit type"@en , "Einheitstyp"@de , "birim türü"@tr , "نوع الوحدة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range skos:Concept .
+mfh:tBedeutung    a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Bedeutung"@de , "mana / te'vîl"@tr , "meaning"@en , "معنى"@ar .
+mfh:tHadith       a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Hadith"@de , "merfû' hadis"@tr , "prophetic hadith"@en , "حديث مرفوع"@ar .
+mfh:tSahabi       a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Sahabi-Aussage"@de , "mevkûf"@tr , "Companion report"@en , "موقوف"@ar .
+mfh:tTabii        a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Tabiin-Aussage"@de , "maktû'"@tr , "Successor report"@en , "مقطوع"@ar .
+mfh:tAnlass       a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Offenbarungsanlass"@de , "sebeb-i nüzûl"@tr , "occasion of revelation"@en , "سبب النزول"@ar .
+mfh:tLesart       a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Lesart"@de , "kıraat"@tr , "variant reading"@en , "قراءة"@ar .
+mfh:tSprache      a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Sprache"@de , "i'râb / lugat / belâgat"@tr , "language"@en , "لغة وإعراب وبلاغة"@ar .
+mfh:tHukum        a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Rechtsfolge"@de , "hüküm"@tr , "legal ruling"@en , "حكم"@ar .
+mfh:tNesh         a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Abrogation"@de , "nesh"@tr , "abrogation"@en , "نسخ"@ar .
+mfh:tKelam        a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Glaubenslehre"@de , "kelâm / akîde"@tr , "theology"@en , "عقيدة"@ar .
+mfh:tIsrailiyat   a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "İsrailiyat"@de , "isrâiliyyât"@tr , "Isrāʾīliyyāt"@en , "إسرائيليات"@ar .
+mfh:tSiir         a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Dichterbeleg"@de , "şiir şâhidi"@tr , "poetic evidence"@en , "شاهد شعري"@ar .
+mfh:tQuerverweis  a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Querverweis"@de , "âyetle tefsir"@tr , "cross-reference"@en , "تفسير القرآن بالقرآن"@ar .
+mfh:tTercih       a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Abwägung des Autors"@de , "tercîh"@tr , "author's preference"@en , "ترجيح"@ar .
+mfh:tIsari        a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Mystische Deutung"@de , "işârî"@tr , "allusive reading"@en , "إشاري"@ar .
+mfh:tMafhumAspekt a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Gelebte Bedeutung"@de , "pratik mana"@tr , "lived meaning"@en , "معنى عملي"@ar ;
+    skos:definition "Aussage darüber, was ein Begriff praktisch für einen Menschen heißt."@de .
+# Am Rande: Usûl
+mfh:tMantuk         a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Mantûk"@de , "mantûk"@tr , "explicit meaning"@en , "منطوق"@ar .
+mfh:tMefhumMuvafaka a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Mefhûmu'l-muvâfaka"@de , "mefhûmu'l-muvâfaka"@tr , "implied meaning (a fortiori)"@en , "مفهوم الموافقة"@ar .
+mfh:tMefhumMuhalefe a skos:Concept ; skos:inScheme mfh:Einheitstyp ; skos:prefLabel "Mefhûmu'l-muhâlefe"@de , "mefhûmu'l-muhâlefe"@tr , "argumentum e contrario"@en , "مفهوم المخالفة"@ar .
+
+mfh:Stellung a skos:ConceptScheme ;
+    rdfs:label "stances"@en , "Stellungen"@de , "tutumlar"@tr , "المواقف"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en .
+mfh:sZustimmend a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Stellung ; skos:prefLabel "مؤيِّد"@ar , "zustimmend"@de , "onaylayan"@tr , "endorsing"@en .
+mfh:sAblehnend  a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Stellung ; skos:prefLabel "رادّ"@ar , "ablehnend"@de , "reddeden"@tr , "rejecting"@en .
+mfh:sBerichtend a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Stellung ; skos:prefLabel "ناقل"@ar , "berichtend"@de , "nakleden"@tr , "reporting"@en .
+
+#################################################################
+# Ebene 4: Deutung
+#################################################################
+
+mfh:Deutung a owl:Class ;
+    rdfs:label "قول تفسيري"@ar , "Yorum"@tr , "Interpretation"@en , "Deutung"@de ;
+    rdfs:comment "Inhaltliche Position zu einem Versabschnitt, unabhängig davon, wer sie aufschreibt."@de .
+mfh:deutungZu a owl:ObjectProperty ;
+    rdfs:label "interpretation of"@en , "Deutung zu"@de , "yorumladığı yer"@tr , "تفسير لـ"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Deutung .
+
+mfh:Frage a owl:Class ;
+    rdfs:label "مسألة"@ar , "Mesele"@tr , "Question"@en , "Frage"@de ;
+    rdfs:comment "Streit- oder Sachfrage zu einer Versstelle, auf die mehrere Deutungen antworten (z. B. „Warum steht ʿibâdet vor istiâne?“). Ergänzt am 19.10.2026 aus dem Pilot."@de .
+mfh:frage a owl:ObjectProperty ;
+    rdfs:label "question"@en , "Frage"@de , "mesele"@tr , "المسألة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Deutung ; rdfs:range mfh:Frage .
+mfh:vertritt a owl:ObjectProperty ;
+    rdfs:label "holds"@en , "vertritt"@de , "benimsediği yorum"@tr , "يتبنّى"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range mfh:Deutung .
+mfh:erwaehnt a owl:ObjectProperty ;
+    rdfs:label "mentions"@en , "erwähnt"@de , "zikrettiği yorum"@tr , "يذكر"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range mfh:Deutung .
+mfh:lehntAb a owl:ObjectProperty ;
+    rdfs:label "rejects"@en , "lehnt ab"@de , "reddettiği yorum"@tr , "يردّ"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Einheit ; rdfs:range mfh:Deutung .
+mfh:stehtImGegensatzZu a owl:ObjectProperty , owl:SymmetricProperty ;
+    rdfs:label "contrasts with"@en , "steht im Gegensatz zu"@de , "karşıt olduğu yorum"@tr , "يقابل"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Deutung ; rdfs:range mfh:Deutung .
+mfh:praegtBegriff a owl:ObjectProperty ;
+    rdfs:label "shapes concept"@en , "prägt Begriff"@de , "şekillendirdiği kavram"@tr , "يبيّن مفهوم"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Deutung ; rdfs:range mfh:Mafhum .
+
+#################################################################
+# Ebene 6: Mafhûm (gelebte Bedeutung)
+#################################################################
+
+mfh:Mafhum a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "مفهوم"@ar , "Mefhûm"@tr , "Concept (lived meaning)"@en , "Mafhûm (gelebte Bedeutung)"@de ;
+    rdfs:comment "Ein Koranbegriff in seiner konzeptionellen, gelebten Bedeutung: was er praktisch für einen Menschen heißt."@de .
+
+mfh:Aspekt a owl:Class ;
+    rdfs:label "جانب"@ar , "Yön"@tr , "Aspect"@en , "Aspekt"@de .
+mfh:aspektVon a owl:ObjectProperty ;
+    rdfs:label "aspect of"@en , "Aspekt von"@de , "ait olduğu kavram"@tr , "جانب من"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Aspekt ; rdfs:range mfh:Mafhum .
+mfh:aspekttyp a owl:ObjectProperty ;
+    rdfs:label "aspect type"@en , "Aspekttyp"@de , "yön türü"@tr , "نوع الجانب"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Aspekt ; rdfs:range skos:Concept .
+mfh:belegtDurch a owl:ObjectProperty ;
+    rdfs:label "supported by"@en , "belegt durch"@de , "delili"@tr , "دليله"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Aspekt ; rdfs:range mfh:Einheit ;
+    rdfs:comment "Pflicht: Ohne Beleg gibt es keinen Aspekt."@de .
+mfh:vorkommen a owl:ObjectProperty ;
+    rdfs:label "occurrence"@en , "Vorkommen"@de , "geçtiği yer"@tr , "موضع وروده"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Mafhum ;
+    rdfs:comment "Vers oder Versabschnitt, an dem der Begriff erscheint."@de .
+
+mfh:Aspekttyp a skos:ConceptScheme ;
+    rdfs:label "aspect types"@en , "Aspekttypen"@de , "yön türleri"@tr , "أنواع الجوانب"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en .
+mfh:aWesen            a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Wesen"@de , "mâhiyet"@tr , "essence"@en , "ماهية"@ar .
+mfh:aHerz             a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Herzenszustand"@de , "hâl"@tr , "state of the heart"@en , "حال"@ar .
+mfh:aHandlung         a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Handlung"@de , "amel"@tr , "action"@en , "عمل"@ar .
+mfh:aVoraussetzung    a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Voraussetzung"@de , "şart"@tr , "precondition"@en , "شرط"@ar .
+mfh:aHindernis        a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Hindernis"@de , "engel"@tr , "obstacle"@en , "مانع"@ar .
+mfh:aGegenteil        a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Gegenteil, Verfehlung"@de , "zıt"@tr , "opposite"@en , "ضد"@ar .
+mfh:aMissverstaendnis a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Missverständnis"@de , "yanlış anlama"@tr , "misconception"@en , "فهم خاطئ"@ar .
+mfh:aStufe            a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Stufe"@de , "makâm / derece"@tr , "station"@en , "مقام"@ar .
+mfh:aFrucht           a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Frucht"@de , "semere"@tr , "fruit"@en , "ثمرة"@ar .
+mfh:aVorbild          a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Vorbild"@de , "kıssa / örnek"@tr , "exemplar"@en , "قدوة"@ar .
+mfh:aAlltag           a skos:Concept ; skos:inScheme mfh:Aspekttyp ; skos:prefLabel "Alltagsbezug"@de , "gündelik hayat"@tr , "everyday life"@en , "الحياة اليومية"@ar .
+
+mfh:setztVoraus  a owl:ObjectProperty ;
+    rdfs:label "presupposes"@en , "setzt voraus"@de , "ön şartı"@tr , "يتوقّف على"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:subPropertyOf skos:related ; rdfs:domain mfh:Mafhum ; rdfs:range mfh:Mafhum .
+mfh:fuehrtZu     a owl:ObjectProperty ;
+    rdfs:label "leads to"@en , "führt zu"@de , "götürdüğü kavram"@tr , "يؤدّي إلى"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:subPropertyOf skos:related ; rdfs:domain mfh:Mafhum ; rdfs:range mfh:Mafhum .
+mfh:gegenteilVon a owl:ObjectProperty , owl:SymmetricProperty ;
+    rdfs:label "opposite of"@en , "Gegenteil von"@de , "zıddı"@tr , "ضدّ"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:subPropertyOf skos:related ; rdfs:domain mfh:Mafhum ; rdfs:range mfh:Mafhum .
+mfh:stufeVon     a owl:ObjectProperty ;
+    rdfs:label "station of"@en , "Stufe von"@de , "mertebesi olduğu kavram"@tr , "مرتبة من"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:subPropertyOf skos:broader ; rdfs:domain mfh:Mafhum ; rdfs:range mfh:Mafhum .
+
+mfh:Zusammenfassung a owl:Class ;
+    rdfs:label "Zusammenfassung"@de , "Özet"@tr , "Synthesis"@en , "خلاصة"@ar ;
+    rdfs:comment "Lesbarer Text „Was heißt das für mich?“. Nie als Gelehrtenwort ausgeben."@de .
+mfh:fasstZusammen a owl:ObjectProperty ;
+    rdfs:label "summarizes"@en , "fasst zusammen"@de , "özetlediği kavram"@tr , "يلخّص"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Zusammenfassung ; rdfs:range mfh:Mafhum .
+
+#################################################################
+# Ebene 5: Herkunft und Prüfung (über PROV-O)
+#################################################################
+
+mfh:Pruefstatus a skos:ConceptScheme ;
+    rdfs:label "review status values"@en , "Prüfstatus"@de , "kontrol durumları"@tr , "حالات المراجعة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en .
+mfh:status a owl:ObjectProperty ;
+    rdfs:label "review status"@en , "Prüfstatus"@de , "kontrol durumu"@tr , "حالة المراجعة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:range skos:Concept .
+mfh:pVorschlag a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Pruefstatus ; skos:prefLabel "اقتراح آلي غير مراجَع"@ar , "KI-Vorschlag, ungeprüft"@de , "YZ önerisi, kontrol edilmedi"@tr , "AI suggestion, unreviewed"@en .
+mfh:pGeprueft  a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Pruefstatus ; skos:prefLabel "مراجَع"@ar , "geprüft"@de , "kontrol edildi"@tr , "reviewed"@en .
+mfh:pVerworfen a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Pruefstatus ; skos:prefLabel "مرفوض"@ar , "verworfen"@de , "reddedildi"@tr , "rejected"@en .
+mfh:sicherheit a owl:DatatypeProperty ;
+    rdfs:label "confidence"@en , "Sicherheit"@de , "güven düzeyi"@tr , "درجة الثقة"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:range xsd:string ;
+    rdfs:comment "hoch, mittel, niedrig"@de .
+# Erzeugt von: prov:wasGeneratedBy / prov:wasAttributedTo (Modell oder Mensch, Zeitpunkt)
+# Geprüft von: prov:wasAttributedTo mit Rolle, dct:date
+
+# Themenbereiche: feste Gliederung der Fragen für alle Verse (ergänzt 19.10.2026)
+mfh:Themenbereich a skos:ConceptScheme ;
+    rdfs:label "مجالات المسائل"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:label "Themenbereich"@de , "Konu alanı"@tr , "Topic area"@en .
+mfh:themenbereich a owl:ObjectProperty ;
+    rdfs:label "topic area"@en , "Themenbereich"@de , "konu alanı"@tr , "المجال"@ar ;
+    skos:editorialNote "ar label: unreviewed suggestion"@en ; rdfs:domain mfh:Frage ; rdfs:range skos:Concept .
+mfh:th-bedeutung a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "المعنى"@ar , "Bedeutung"@de , "Mana"@tr , "Meaning"@en .
+mfh:th-sprache a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "اللغة والإعراب"@ar , "Sprache und Grammatik"@de , "Dil ve i'râb"@tr , "Language and grammar"@en .
+mfh:th-kiraat a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "القراءات"@ar , "Lesarten"@de , "Kıraatler"@tr , "Variant readings"@en .
+mfh:th-ulum a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "علوم القرآن"@ar , "Koranwissenschaft (Versstatus, Herkunft)"@de , "Kur'an ilimleri (âyet oluşu, nüzul)"@tr , "Qur'anic sciences (verse status, origin)"@en .
+mfh:th-akide a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "العقيدة والكلام"@ar , "Glaubenslehre"@de , "Akaid ve kelâm"@tr , "Theology"@en .
+mfh:th-ahkam a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "الأحكام والصلاة"@ar , "Recht und Gebet"@de , "Ahkâm ve namaz"@tr , "Law and prayer"@en .
+mfh:th-mafhum a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "المعنى العملي"@ar , "Gelebte Bedeutung"@de , "Pratik mana ve ahlâk"@tr , "Lived meaning"@en .
+mfh:th-munasebet a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "المناسبات والترتيب"@ar , "Zusammenhang und Aufbau"@de , "Münâsebet ve tertip"@tr , "Coherence and structure"@en .
+mfh:th-isari a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "التفسير الإشاري"@ar , "İşârî-Deutung"@de , "İşârî tefsir"@tr , "Allusive reading"@en .
+mfh:th-rahmen a skos:Concept ; skos:editorialNote "ar label: unreviewed suggestion"@en ; skos:inScheme mfh:Themenbereich ; skos:prefLabel "الاستعاذة والتأمين"@ar , "İstiâze und Âmîn"@de , "İstiâze ve âmîn"@tr , "Isti'adha and amin"@en .

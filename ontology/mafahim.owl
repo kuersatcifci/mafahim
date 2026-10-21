@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aGegenteil">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Gegenteil, Verfehlung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">zıt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">opposite</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">ضد</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aVorbild">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Vorbild</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">kıssa / örnek</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">exemplar</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">قدوة</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#lehntAb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">rejects</rdfs:label>
+    <rdfs:label xml:lang="de">lehnt ab</rdfs:label>
+    <rdfs:label xml:lang="tr">reddettiği yorum</rdfs:label>
+    <rdfs:label xml:lang="ar">يردّ</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#surenNr">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">surah number</rdfs:label>
+    <rdfs:label xml:lang="de">Surennummer</rdfs:label>
+    <rdfs:label xml:lang="tr">sûre numarası</rdfs:label>
+    <rdfs:label xml:lang="ar">رقم السورة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tNesh">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Abrogation</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">nesh</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">abrogation</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">نسخ</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-bedeutung">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">المعنى</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bedeutung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Mana</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Meaning</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Stellung">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="en">stances</rdfs:label>
+    <rdfs:label xml:lang="de">Stellungen</rdfs:label>
+    <rdfs:label xml:lang="tr">tutumlar</rdfs:label>
+    <rdfs:label xml:lang="ar">المواقف</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#pGeprueft">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Pruefstatus"/>
+    <skos:prefLabel xml:lang="ar">مراجَع</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">geprüft</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">kontrol edildi</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">reviewed</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#ankerBis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">anchor end</rdfs:label>
+    <rdfs:label xml:lang="de">Anker Ende</rdfs:label>
+    <rdfs:label xml:lang="tr">metin çapası sonu</rdfs:label>
+    <rdfs:label xml:lang="ar">نهاية الموضع</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Deutung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">قول تفسيري</rdfs:label>
+    <rdfs:label xml:lang="tr">Yorum</rdfs:label>
+    <rdfs:label xml:lang="en">Interpretation</rdfs:label>
+    <rdfs:label xml:lang="de">Deutung</rdfs:label>
+    <rdfs:comment xml:lang="de">Inhaltliche Position zu einem Versabschnitt, unabhängig davon, wer sie aufschreibt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#fuehrtZu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">leads to</rdfs:label>
+    <rdfs:label xml:lang="de">führt zu</rdfs:label>
+    <rdfs:label xml:lang="tr">götürdüğü kavram</rdfs:label>
+    <rdfs:label xml:lang="ar">يؤدّي إلى</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Richtung">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="ar">المذاهب</rdfs:label>
+    <rdfs:label xml:lang="de">Richtung</rdfs:label>
+    <rdfs:label xml:lang="tr">Ekol</rdfs:label>
+    <rdfs:label xml:lang="en">School</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aWesen">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Wesen</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">mâhiyet</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">essence</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">ماهية</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#pVerworfen">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Pruefstatus"/>
+    <skos:prefLabel xml:lang="ar">مرفوض</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">verworfen</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">reddedildi</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">rejected</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#wortlaut">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">original wording</rdfs:label>
+    <rdfs:label xml:lang="de">Wortlaut</rdfs:label>
+    <rdfs:label xml:lang="tr">asıl metin</rdfs:label>
+    <rdfs:label xml:lang="ar">النص الأصلي</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rdfs:comment xml:lang="de">Arabischer Originalwortlaut der Einheit.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Zusammenfassung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="de">Zusammenfassung</rdfs:label>
+    <rdfs:label xml:lang="tr">Özet</rdfs:label>
+    <rdfs:label xml:lang="en">Synthesis</rdfs:label>
+    <rdfs:label xml:lang="ar">خلاصة</rdfs:label>
+    <rdfs:comment xml:lang="de">Lesbarer Text „Was heißt das für mich?“. Nie als Gelehrtenwort ausgeben.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tIsari">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Mystische Deutung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">işârî</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">allusive reading</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">إشاري</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#themenbereich">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">topic area</rdfs:label>
+    <rdfs:label xml:lang="de">Themenbereich</rdfs:label>
+    <rdfs:label xml:lang="tr">konu alanı</rdfs:label>
+    <rdfs:label xml:lang="ar">المجال</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Frage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#siiImami">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Richtung"/>
+    <skos:prefLabel xml:lang="tr">şîî imâmî</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">schiitisch-imamitisch</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Shia Imami</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">شيعي إمامي</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tMefhumMuvafaka">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Mefhûmu'l-muvâfaka</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">mefhûmu'l-muvâfaka</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">implied meaning (a fortiori)</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">مفهوم الموافقة</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aHerz">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Herzenszustand</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">hâl</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">state of the heart</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">حال</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#sure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">surah</rdfs:label>
+    <rdfs:label xml:lang="de">Sure</rdfs:label>
+    <rdfs:label xml:lang="tr">sûre</rdfs:label>
+    <rdfs:label xml:lang="ar">السورة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Vers"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Sure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-rahmen">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">الاستعاذة والتأمين</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">İstiâze und Âmîn</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">İstiâze ve âmîn</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Isti'adha and amin</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aspektVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">aspect of</rdfs:label>
+    <rdfs:label xml:lang="de">Aspekt von</rdfs:label>
+    <rdfs:label xml:lang="tr">ait olduğu kavram</rdfs:label>
+    <rdfs:label xml:lang="ar">جانب من</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Aspekt"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#AhlakWerk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/mafahim/ontology#Werk"/>
+    <rdfs:label xml:lang="ar">كتاب في الأخلاق والتزكية</rdfs:label>
+    <rdfs:label xml:lang="tr">Ahlak/tasavvuf eseri</rdfs:label>
+    <rdfs:label xml:lang="en">Ethics/spirituality work</rdfs:label>
+    <rdfs:label xml:lang="de">Ahlak-/Tasavvuf-Werk</rdfs:label>
+    <rdfs:comment xml:lang="de">Nach Begriffen statt nach Versen geordnet, z. B. İhyâ, Medâricü's-Sâlikîn, Risâle.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aHindernis">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Hindernis</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">engel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">obstacle</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">مانع</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#setztVoraus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">presupposes</rdfs:label>
+    <rdfs:label xml:lang="de">setzt voraus</rdfs:label>
+    <rdfs:label xml:lang="tr">ön şartı</rdfs:label>
+    <rdfs:label xml:lang="ar">يتوقّف على</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-mafhum">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">المعنى العملي</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gelebte Bedeutung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Pratik mana ve ahlâk</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Lived meaning</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#sZustimmend">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Stellung"/>
+    <skos:prefLabel xml:lang="ar">مؤيِّد</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">zustimmend</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">onaylayan</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">endorsing</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Frage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">مسألة</rdfs:label>
+    <rdfs:label xml:lang="tr">Mesele</rdfs:label>
+    <rdfs:label xml:lang="en">Question</rdfs:label>
+    <rdfs:label xml:lang="de">Frage</rdfs:label>
+    <rdfs:comment xml:lang="de">Streit- oder Sachfrage zu einer Versstelle, auf die mehrere Deutungen antworten (z. B. „Warum steht ʿibâdet vor istiâne?“). Ergänzt am 19.10.2026 aus dem Pilot.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#stehtImGegensatzZu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label xml:lang="en">contrasts with</rdfs:label>
+    <rdfs:label xml:lang="de">steht im Gegensatz zu</rdfs:label>
+    <rdfs:label xml:lang="tr">karşıt olduğu yorum</rdfs:label>
+    <rdfs:label xml:lang="ar">يقابل</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#rivaye">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">rivâye</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Überlieferung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">transmission-based</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">بالمأثور</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-kiraat">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">القراءات</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Lesarten</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Kıraatler</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Variant readings</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-ahkam">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">الأحكام والصلاة</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Recht und Gebet</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Ahkâm ve namaz</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Law and prayer</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#todesjahrMiladi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">death year (CE)</rdfs:label>
+    <rdfs:label xml:lang="de">Todesjahr (n. Chr.)</rdfs:label>
+    <rdfs:label xml:lang="tr">vefat yılı (milâdî)</rdfs:label>
+    <rdfs:label xml:lang="ar">سنة الوفاة (ميلادي)</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#vorkommen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">occurrence</rdfs:label>
+    <rdfs:label xml:lang="de">Vorkommen</rdfs:label>
+    <rdfs:label xml:lang="tr">geçtiği yer</rdfs:label>
+    <rdfs:label xml:lang="ar">موضع وروده</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+    <rdfs:comment xml:lang="de">Vers oder Versabschnitt, an dem der Begriff erscheint.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#fasstZusammen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">summarizes</rdfs:label>
+    <rdfs:label xml:lang="de">fasst zusammen</rdfs:label>
+    <rdfs:label xml:lang="tr">özetlediği kavram</rdfs:label>
+    <rdfs:label xml:lang="ar">يلخّص</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Zusammenfassung"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tHukum">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Rechtsfolge</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">hüküm</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">legal ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">حكم</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#ankerVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">anchor start</rdfs:label>
+    <rdfs:label xml:lang="de">Anker Beginn</rdfs:label>
+    <rdfs:label xml:lang="tr">metin çapası başı</rdfs:label>
+    <rdfs:label xml:lang="ar">بداية الموضع</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment xml:lang="de">Zeichenposition im bereinigten Eintragstext (Beginn).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#typ">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">unit type</rdfs:label>
+    <rdfs:label xml:lang="de">Einheitstyp</rdfs:label>
+    <rdfs:label xml:lang="tr">birim türü</rdfs:label>
+    <rdfs:label xml:lang="ar">نوع الوحدة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#lugavi">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">lugavî</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Sprache</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">linguistic</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">لغوي</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Sure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">سورة</rdfs:label>
+    <rdfs:label xml:lang="tr">Sure</rdfs:label>
+    <rdfs:label xml:lang="en">Surah</rdfs:label>
+    <rdfs:label xml:lang="de">Sure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#kapitel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">chapter</rdfs:label>
+    <rdfs:label xml:lang="de">Kapitel</rdfs:label>
+    <rdfs:label xml:lang="tr">bölüm</rdfs:label>
+    <rdfs:label xml:lang="ar">الباب</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Eintrag"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#stellung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">stance</rdfs:label>
+    <rdfs:label xml:lang="de">Stellung</rdfs:label>
+    <rdfs:label xml:lang="tr">tutum</rdfs:label>
+    <rdfs:label xml:lang="ar">الموقف</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tHadith">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Hadith</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">merfû' hadis</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">prophetic hadith</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">حديث مرفوع</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#verfasstVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">written by</rdfs:label>
+    <rdfs:label xml:lang="de">verfasst von</rdfs:label>
+    <rdfs:label xml:lang="tr">müellifi</rdfs:label>
+    <rdfs:label xml:lang="ar">مؤلّفه</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Werk"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#versNr">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">verse number</rdfs:label>
+    <rdfs:label xml:lang="de">Versnummer</rdfs:label>
+    <rdfs:label xml:lang="tr">âyet numarası</rdfs:label>
+    <rdfs:label xml:lang="ar">رقم الآية</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tBedeutung">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Bedeutung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">mana / te'vîl</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">meaning</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">معنى</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#sBerichtend">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Stellung"/>
+    <skos:prefLabel xml:lang="ar">ناقل</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">berichtend</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">nakleden</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">reporting</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/mafahim/ontology/0.1.0"/>
+    <owl:versionInfo>0.1.0 (draft)</owl:versionInfo>
+    <vann:preferredNamespacePrefix>mfh</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/mafahim/ontology#</vann:preferredNamespaceUri>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-21</dct:modified>
+    <dct:source rdf:resource="https://github.com/talhaahmed884/SemanticTafsirKG"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/kuersatcifci/mafahim"/>
+    <dct:description xml:lang="en">Ontology for classical Quran commentaries (tafsir): works and editions, source-anchored statement units, cross-work interpretations and questions, concepts in their lived meaning (mafhūm), and review status. Extends SemanticTafsir.</dct:description>
+    <dct:title xml:lang="ar">مفاهيم القرآن في تفاسير علماء الأمة</dct:title>
+    <dct:title xml:lang="en">Mafāhīm: Quranic concepts in classical tafsir</dct:title>
+    <dct:title xml:lang="tr">Mafāhīm: Kur'an kavramları klasik tefsirlerde</dct:title>
+    <dct:title xml:lang="de">Mafāhīm: Koranbegriffe in den klassischen Tefsiren</dct:title>
+    <dct:creator>Kürşat Çifçi</dct:creator>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-19</dct:created>
+    <rdfs:comment xml:lang="de">Erweitert SemanticTafsir um mehrere Werke, zerlegte Aussage-Einheiten, werkübergreifende Deutungen, gelebte Begriffe (Mafhûm) und Prüfvermerke.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#gattung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">genre</rdfs:label>
+    <rdfs:label xml:lang="de">Gattung</rdfs:label>
+    <rdfs:label xml:lang="tr">tür</rdfs:label>
+    <rdfs:label xml:lang="ar">النوع</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Werk"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#vers">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">verse</rdfs:label>
+    <rdfs:label xml:lang="de">Vers</rdfs:label>
+    <rdfs:label xml:lang="tr">âyet</rdfs:label>
+    <rdfs:label xml:lang="ar">الآية</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Versabschnitt"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Vers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#gemeinfreiBegruendung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">public domain rationale</rdfs:label>
+    <rdfs:label xml:lang="de">Begründung für Gemeinfreiheit</rdfs:label>
+    <rdfs:label xml:lang="tr">serbest kullanım gerekçesi</rdfs:label>
+    <rdfs:label xml:lang="ar">سبب الإتاحة العامة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Ausgabe"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="de">Pflichtfeld: der Satz, warum die Ausgabe frei ist.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#gegenteilVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label xml:lang="en">opposite of</rdfs:label>
+    <rdfs:label xml:lang="de">Gegenteil von</rdfs:label>
+    <rdfs:label xml:lang="tr">zıddı</rdfs:label>
+    <rdfs:label xml:lang="ar">ضدّ</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#stufeVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">station of</rdfs:label>
+    <rdfs:label xml:lang="de">Stufe von</rdfs:label>
+    <rdfs:label xml:lang="tr">mertebesi olduğu kavram</rdfs:label>
+    <rdfs:label xml:lang="ar">مرتبة من</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Werk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">كتاب</rdfs:label>
+    <rdfs:label xml:lang="tr">Eser</rdfs:label>
+    <rdfs:label xml:lang="en">Work</rdfs:label>
+    <rdfs:label xml:lang="de">Werk</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#erklaert">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">explains</rdfs:label>
+    <rdfs:label xml:lang="de">erklärt</rdfs:label>
+    <rdfs:label xml:lang="tr">açıkladığı âyet</rdfs:label>
+    <rdfs:label xml:lang="ar">يفسّر</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Eintrag"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Vers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#ahkam">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">ahkâm</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Recht</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">legal</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">أحكام</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#status">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">review status</rdfs:label>
+    <rdfs:label xml:lang="de">Prüfstatus</rdfs:label>
+    <rdfs:label xml:lang="tr">kontrol durumu</rdfs:label>
+    <rdfs:label xml:lang="ar">حالة المراجعة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#ausEintrag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">from entry</rdfs:label>
+    <rdfs:label xml:lang="de">aus Eintrag</rdfs:label>
+    <rdfs:label xml:lang="tr">ait olduğu kayıt</rdfs:label>
+    <rdfs:label xml:lang="ar">من المدخل</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Eintrag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#frage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">question</rdfs:label>
+    <rdfs:label xml:lang="de">Frage</rdfs:label>
+    <rdfs:label xml:lang="tr">mesele</rdfs:label>
+    <rdfs:label xml:lang="ar">المسألة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Frage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Themenbereich">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="ar">مجالات المسائل</rdfs:label>
+    <rdfs:label xml:lang="de">Themenbereich</rdfs:label>
+    <rdfs:label xml:lang="tr">Konu alanı</rdfs:label>
+    <rdfs:label xml:lang="en">Topic area</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Ausgabe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">نسخة رقمية</rdfs:label>
+    <rdfs:label xml:lang="tr">Dijital nüsha</rdfs:label>
+    <rdfs:label xml:lang="en">Digital edition</rdfs:label>
+    <rdfs:label xml:lang="de">Digitale Ausgabe</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#ausgabeVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">edition of</rdfs:label>
+    <rdfs:label xml:lang="de">Ausgabe von</rdfs:label>
+    <rdfs:label xml:lang="tr">nüshası olduğu eser</rdfs:label>
+    <rdfs:label xml:lang="ar">نسخة من</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Ausgabe"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Werk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#pVorschlag">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Pruefstatus"/>
+    <skos:prefLabel xml:lang="ar">اقتراح آلي غير مراجَع</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">KI-Vorschlag, ungeprüft</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">YZ önerisi, kontrol edilmedi</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">AI suggestion, unreviewed</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aVoraussetzung">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Voraussetzung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">şart</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">precondition</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">شرط</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#betrifft">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">concerns</rdfs:label>
+    <rdfs:label xml:lang="de">betrifft</rdfs:label>
+    <rdfs:label xml:lang="tr">ilgili olduğu yer</rdfs:label>
+    <rdfs:label xml:lang="ar">يتعلّق بـ</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:comment xml:lang="de">Vers oder Versabschnitt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Einheitstyp">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="ar">أنواع الوحدات</rdfs:label>
+    <rdfs:label xml:lang="de">Einheitstyp</rdfs:label>
+    <rdfs:label xml:lang="tr">Birim türü</rdfs:label>
+    <rdfs:label xml:lang="en">Unit type</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#hatHasiye">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has gloss</rdfs:label>
+    <rdfs:label xml:lang="de">hat Randkommentar</rdfs:label>
+    <rdfs:label xml:lang="tr">hâşiyesi</rdfs:label>
+    <rdfs:label xml:lang="ar">له حاشية</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Eintrag"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Hasiye"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Hasiye">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">حاشية</rdfs:label>
+    <rdfs:label xml:lang="tr">Hâşiye</rdfs:label>
+    <rdfs:label xml:lang="en">Gloss</rdfs:label>
+    <rdfs:label xml:lang="de">Randkommentar</rdfs:label>
+    <rdfs:comment xml:lang="de">Klassischer Randkommentar zu einem Werk, z. B. İbn el-Müneyyirs el-İntisâf zum Keşşâf.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#vollstaendig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">complete</rdfs:label>
+    <rdfs:label xml:lang="de">vollständig</rdfs:label>
+    <rdfs:label xml:lang="tr">tam</rdfs:label>
+    <rdfs:label xml:lang="ar">كامل</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Eintrag"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="de">false, wenn die Quelle selbst eine Kürzung vermerkt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Pruefstatus">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="en">review status values</rdfs:label>
+    <rdfs:label xml:lang="de">Prüfstatus</rdfs:label>
+    <rdfs:label xml:lang="tr">kontrol durumları</rdfs:label>
+    <rdfs:label xml:lang="ar">حالات المراجعة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#sAblehnend">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Stellung"/>
+    <skos:prefLabel xml:lang="ar">رادّ</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">ablehnend</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">reddeden</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">rejecting</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#wortVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">first word</rdfs:label>
+    <rdfs:label xml:lang="de">erstes Wort</rdfs:label>
+    <rdfs:label xml:lang="tr">ilk kelime</rdfs:label>
+    <rdfs:label xml:lang="ar">الكلمة الأولى</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Versabschnitt"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#deutungZu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">interpretation of</rdfs:label>
+    <rdfs:label xml:lang="de">Deutung zu</rdfs:label>
+    <rdfs:label xml:lang="tr">yorumladığı yer</rdfs:label>
+    <rdfs:label xml:lang="ar">تفسير لـ</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Versabschnitt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semantictafsir.com/ontology/VerseFragment"/>
+    <rdfs:label xml:lang="ar">مقطع من آية</rdfs:label>
+    <rdfs:label xml:lang="tr">Âyet bölümü</rdfs:label>
+    <rdfs:label xml:lang="en">Verse segment</rdfs:label>
+    <rdfs:label xml:lang="de">Versabschnitt</rdfs:label>
+    <rdfs:comment xml:lang="de">Wortbereich innerhalb eines Verses, Wörter nach QUL-Morphologie gezählt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aFrucht">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Frucht</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">semere</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">fruit</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">ثمرة</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#kelam">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">kelâm</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Glaubenslehre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">theological</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">كلامي</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#sicherheit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">confidence</rdfs:label>
+    <rdfs:label xml:lang="de">Sicherheit</rdfs:label>
+    <rdfs:label xml:lang="tr">güven düzeyi</rdfs:label>
+    <rdfs:label xml:lang="ar">درجة الثقة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="de">hoch, mittel, niedrig</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tSiir">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Dichterbeleg</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">şiir şâhidi</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">poetic evidence</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">شاهد شعري</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Gattung">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="ar">أنواع التفسير</rdfs:label>
+    <rdfs:label xml:lang="de">Gattung</rdfs:label>
+    <rdfs:label xml:lang="tr">Tür</rdfs:label>
+    <rdfs:label xml:lang="en">Genre</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tKelam">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Glaubenslehre</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">kelâm / akîde</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">theology</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">عقيدة</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tTabii">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Tabiin-Aussage</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">maktû'</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Successor report</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">مقطوع</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#belegtDurch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">supported by</rdfs:label>
+    <rdfs:label xml:lang="de">belegt durch</rdfs:label>
+    <rdfs:label xml:lang="tr">delili</rdfs:label>
+    <rdfs:label xml:lang="ar">دليله</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Aspekt"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:comment xml:lang="de">Pflicht: Ohne Beleg gibt es keinen Aspekt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Mafhum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="ar">مفهوم</rdfs:label>
+    <rdfs:label xml:lang="tr">Mefhûm</rdfs:label>
+    <rdfs:label xml:lang="en">Concept (lived meaning)</rdfs:label>
+    <rdfs:label xml:lang="de">Mafhûm (gelebte Bedeutung)</rdfs:label>
+    <rdfs:comment xml:lang="de">Ein Koranbegriff in seiner konzeptionellen, gelebten Bedeutung: was er praktisch für einen Menschen heißt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#zugeschrieben">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">attributed to</rdfs:label>
+    <rdfs:label xml:lang="de">zugeschrieben</rdfs:label>
+    <rdfs:label xml:lang="tr">nisbet edilen</rdfs:label>
+    <rdfs:label xml:lang="ar">منسوب إلى</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Person"/>
+    <rdfs:comment xml:lang="de">Wer die Aussage gemacht hat (z. B. İbn Abbas), nicht der Müfessir, der sie aufschreibt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tMantuk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Mantûk</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">mantûk</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">explicit meaning</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">منطوق</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#zeydi">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Richtung"/>
+    <skos:prefLabel xml:lang="tr">zeydî</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">zaiditisch</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Zaydi</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">زيدي</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#todesjahrHicri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">death year (Hijri)</rdfs:label>
+    <rdfs:label xml:lang="de">Todesjahr (Hidschri)</rdfs:label>
+    <rdfs:label xml:lang="tr">vefat yılı (hicrî)</rdfs:label>
+    <rdfs:label xml:lang="ar">سنة الوفاة (هجري)</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tSahabi">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Sahabi-Aussage</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">mevkûf</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Companion report</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">موقوف</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Aspekttyp">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="en">aspect types</rdfs:label>
+    <rdfs:label xml:lang="de">Aspekttypen</rdfs:label>
+    <rdfs:label xml:lang="tr">yön türleri</rdfs:label>
+    <rdfs:label xml:lang="ar">أنواع الجوانب</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Einheit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">وحدة</rdfs:label>
+    <rdfs:label xml:lang="tr">Birim</rdfs:label>
+    <rdfs:label xml:lang="en">Unit</rdfs:label>
+    <rdfs:label xml:lang="de">Einheit</rdfs:label>
+    <rdfs:comment xml:lang="de">Eine Aussage mit genau einer Funktion innerhalb eines Eintrags. Ohne Textanker keine Einheit.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aMissverstaendnis">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Missverständnis</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">yanlış anlama</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">misconception</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">فهم خاطئ</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#zusammenfassung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">summary</rdfs:label>
+    <rdfs:label xml:lang="de">Zusammenfassung</rdfs:label>
+    <rdfs:label xml:lang="tr">özet</rdfs:label>
+    <rdfs:label xml:lang="ar">ملخّص</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rdfs:comment xml:lang="de">Kurzfassung in tr, en, de. Immer mit Prüfvermerk.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#vertritt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">holds</rdfs:label>
+    <rdfs:label xml:lang="de">vertritt</rdfs:label>
+    <rdfs:label xml:lang="tr">benimsediği yorum</rdfs:label>
+    <rdfs:label xml:lang="ar">يتبنّى</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#wortBis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">last word</rdfs:label>
+    <rdfs:label xml:lang="de">letztes Wort</rdfs:label>
+    <rdfs:label xml:lang="tr">son kelime</rdfs:label>
+    <rdfs:label xml:lang="ar">الكلمة الأخيرة</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Versabschnitt"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tLesart">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Lesart</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">kıraat</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">variant reading</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">قراءة</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#diraye">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">dirâye</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Abwägung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">reasoning-based</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">بالرأي</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tAnlass">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Offenbarungsanlass</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">sebeb-i nüzûl</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">occasion of revelation</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">سبب النزول</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-munasebet">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">المناسبات والترتيب</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Zusammenhang und Aufbau</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Münâsebet ve tertip</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Coherence and structure</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aspekttyp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">aspect type</rdfs:label>
+    <rdfs:label xml:lang="de">Aspekttyp</rdfs:label>
+    <rdfs:label xml:lang="tr">yön türü</rdfs:label>
+    <rdfs:label xml:lang="ar">نوع الجانب</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Aspekt"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-sprache">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">اللغة والإعراب</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Sprache und Grammatik</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Dil ve i'râb</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Language and grammar</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tSprache">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Sprache</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">i'râb / lugat / belâgat</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">language</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">لغة وإعراب وبلاغة</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tMefhumMuhalefe">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Mefhûmu'l-muhâlefe</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">mefhûmu'l-muhâlefe</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">argumentum e contrario</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">مفهوم المخالفة</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#zitiert">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">cites</rdfs:label>
+    <rdfs:label xml:lang="de">zitiert</rdfs:label>
+    <rdfs:label xml:lang="tr">alıntıladığı eser</rdfs:label>
+    <rdfs:label xml:lang="ar">ينقل عن</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Werk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#hatKette">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has chain of transmission</rdfs:label>
+    <rdfs:label xml:lang="de">hat Überliefererkette</rdfs:label>
+    <rdfs:label xml:lang="tr">isnadı</rdfs:label>
+    <rdfs:label xml:lang="ar">له إسناد</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/NarratorChain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.semantictafsir.com/ontology/Person"/>
+    <rdfs:label xml:lang="ar">شخص</rdfs:label>
+    <rdfs:label xml:lang="tr">Şahıs</rdfs:label>
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:label xml:lang="de">Person</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Eintrag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semantictafsir.com/ontology/Commentary"/>
+    <rdfs:label xml:lang="ar">مدخل</rdfs:label>
+    <rdfs:label xml:lang="tr">Kayıt</rdfs:label>
+    <rdfs:label xml:lang="en">Entry</rdfs:label>
+    <rdfs:label xml:lang="de">Eintrag</rdfs:label>
+    <rdfs:comment xml:lang="de">Text eines Werks zu einem Versbereich (Tefsir) oder Kapitel (Ahlak-Werk).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#eintragAus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">entry from</rdfs:label>
+    <rdfs:label xml:lang="de">Eintrag aus</rdfs:label>
+    <rdfs:label xml:lang="tr">ait olduğu nüsha</rdfs:label>
+    <rdfs:label xml:lang="ar">مدخل من</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Eintrag"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Ausgabe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#richtung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">school</rdfs:label>
+    <rdfs:label xml:lang="de">Richtung</rdfs:label>
+    <rdfs:label xml:lang="tr">ekol</rdfs:label>
+    <rdfs:label xml:lang="ar">المذهب</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="de">Bei Werk und Person. Wird in jeder Ansicht und jeder MCP-Antwort angezeigt.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#praegtBegriff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">shapes concept</rdfs:label>
+    <rdfs:label xml:lang="de">prägt Begriff</rdfs:label>
+    <rdfs:label xml:lang="tr">şekillendirdiği kavram</rdfs:label>
+    <rdfs:label xml:lang="ar">يبيّن مفهوم</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Mafhum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Muefessir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/mafahim/ontology#Person"/>
+    <rdfs:label xml:lang="ar">مفسّر</rdfs:label>
+    <rdfs:label xml:lang="tr">Müfessir</rdfs:label>
+    <rdfs:label xml:lang="en">Exegete</rdfs:label>
+    <rdfs:label xml:lang="de">Exeget</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#munasebet">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">münâsebet</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Zusammenhang</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">coherence</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">مناسبات</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-akide">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">العقيدة والكلام</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Glaubenslehre</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Akaid ve kelâm</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Theology</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aHandlung">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Handlung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">amel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">action</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">عمل</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aAlltag">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Alltagsbezug</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">gündelik hayat</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">everyday life</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">الحياة اليومية</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tTercih">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Abwägung des Autors</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">tercîh</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">author's preference</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">ترجيح</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tMafhumAspekt">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Gelebte Bedeutung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">pratik mana</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">lived meaning</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">معنى عملي</skos:prefLabel>
+    <skos:definition xml:lang="de">Aussage darüber, was ein Begriff praktisch für einen Menschen heißt.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#erwaehnt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">mentions</rdfs:label>
+    <rdfs:label xml:lang="de">erwähnt</rdfs:label>
+    <rdfs:label xml:lang="tr">zikrettiği yorum</rdfs:label>
+    <rdfs:label xml:lang="ar">يذكر</rdfs:label>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <rdfs:domain rdf:resource="https://w3id.org/mafahim/ontology#Einheit"/>
+    <rdfs:range rdf:resource="https://w3id.org/mafahim/ontology#Deutung"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#aStufe">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Aspekttyp"/>
+    <skos:prefLabel xml:lang="de">Stufe</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">makâm / derece</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">station</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">مقام</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Tefsir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/mafahim/ontology#Werk"/>
+    <rdfs:label xml:lang="ar">تفسير</rdfs:label>
+    <rdfs:label xml:lang="tr">Tefsir</rdfs:label>
+    <rdfs:label xml:lang="en">Tafsir</rdfs:label>
+    <rdfs:label xml:lang="de">Tefsir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#isari">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">işârî</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">mystisch</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">allusive</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">إشاري</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tQuerverweis">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">Querverweis</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">âyetle tefsir</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">cross-reference</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">تفسير القرآن بالقرآن</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#tIsrailiyat">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Einheitstyp"/>
+    <skos:prefLabel xml:lang="de">İsrailiyat</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">isrâiliyyât</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Isrāʾīliyyāt</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">إسرائيليات</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Aspekt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ar">جانب</rdfs:label>
+    <rdfs:label xml:lang="tr">Yön</rdfs:label>
+    <rdfs:label xml:lang="en">Aspect</rdfs:label>
+    <rdfs:label xml:lang="de">Aspekt</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#ahlak">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Gattung"/>
+    <skos:prefLabel xml:lang="tr">ahlâk / tasavvuf</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ethik / Spiritualität</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">ethics / spirituality</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">أخلاق وتزكية</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-isari">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">التفسير الإشاري</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">İşârî-Deutung</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">İşârî tefsir</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Allusive reading</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#sunni">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Richtung"/>
+    <skos:prefLabel xml:lang="tr">sünnî</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">sunnitisch</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sunni</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">سني</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#th-ulum">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:editorialNote xml:lang="en">ar label: unreviewed suggestion</skos:editorialNote>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Themenbereich"/>
+    <skos:prefLabel xml:lang="ar">علوم القرآن</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Koranwissenschaft (Versstatus, Herkunft)</skos:prefLabel>
+    <skos:prefLabel xml:lang="tr">Kur'an ilimleri (âyet oluşu, nüzul)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Qur'anic sciences (verse status, origin)</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#mutezili">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/mafahim/ontology#Richtung"/>
+    <skos:prefLabel xml:lang="tr">mu'tezilî</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">mutazilitisch</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Muʿtazili</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">معتزلي</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mafahim/ontology#Vers">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.semantictafsir.com/ontology/Verse"/>
+    <rdfs:label xml:lang="ar">آية</rdfs:label>
+    <rdfs:label xml:lang="tr">Âyet</rdfs:label>
+    <rdfs:label xml:lang="en">Verse</rdfs:label>
+    <rdfs:label xml:lang="de">Vers</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

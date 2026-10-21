@@ -1,0 +1,4 @@
+.DS_Store
+hf/*.ttl
+hf/*.owl
+hf/*.jsonld

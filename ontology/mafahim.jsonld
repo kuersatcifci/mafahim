@@ -1,0 +1,4556 @@
+[
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-rahmen",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "الاستعاذة والتأمين"
+   },
+   {
+    "@language": "de",
+    "@value": "İstiâze und Âmîn"
+   },
+   {
+    "@language": "tr",
+    "@value": "İstiâze ve âmîn"
+   },
+   {
+    "@language": "en",
+    "@value": "Isti'adha and amin"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Richtung",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "المذاهب"
+   },
+   {
+    "@language": "de",
+    "@value": "Richtung"
+   },
+   {
+    "@language": "tr",
+    "@value": "Ekol"
+   },
+   {
+    "@language": "en",
+    "@value": "School"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#todesjahrMiladi",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Person"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "death year (CE)"
+   },
+   {
+    "@language": "de",
+    "@value": "Todesjahr (n. Chr.)"
+   },
+   {
+    "@language": "tr",
+    "@value": "vefat yılı (milâdî)"
+   },
+   {
+    "@language": "ar",
+    "@value": "سنة الوفاة (ميلادي)"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#surenNr",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty",
+   "http://www.w3.org/2002/07/owl#FunctionalProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "surah number"
+   },
+   {
+    "@language": "de",
+    "@value": "Surennummer"
+   },
+   {
+    "@language": "tr",
+    "@value": "sûre numarası"
+   },
+   {
+    "@language": "ar",
+    "@value": "رقم السورة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Aspekt",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "جانب"
+   },
+   {
+    "@language": "tr",
+    "@value": "Yön"
+   },
+   {
+    "@language": "en",
+    "@value": "Aspect"
+   },
+   {
+    "@language": "de",
+    "@value": "Aspekt"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tMefhumMuvafaka",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Mefhûmu'l-muvâfaka"
+   },
+   {
+    "@language": "tr",
+    "@value": "mefhûmu'l-muvâfaka"
+   },
+   {
+    "@language": "en",
+    "@value": "implied meaning (a fortiori)"
+   },
+   {
+    "@language": "ar",
+    "@value": "مفهوم الموافقة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aWesen",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Wesen"
+   },
+   {
+    "@language": "tr",
+    "@value": "mâhiyet"
+   },
+   {
+    "@language": "en",
+    "@value": "essence"
+   },
+   {
+    "@language": "ar",
+    "@value": "ماهية"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#versNr",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty",
+   "http://www.w3.org/2002/07/owl#FunctionalProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "verse number"
+   },
+   {
+    "@language": "de",
+    "@value": "Versnummer"
+   },
+   {
+    "@language": "tr",
+    "@value": "âyet numarası"
+   },
+   {
+    "@language": "ar",
+    "@value": "رقم الآية"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#sBerichtend",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Stellung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "ناقل"
+   },
+   {
+    "@language": "de",
+    "@value": "berichtend"
+   },
+   {
+    "@language": "tr",
+    "@value": "nakleden"
+   },
+   {
+    "@language": "en",
+    "@value": "reporting"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#sicherheit",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "hoch, mittel, niedrig"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "confidence"
+   },
+   {
+    "@language": "de",
+    "@value": "Sicherheit"
+   },
+   {
+    "@language": "tr",
+    "@value": "güven düzeyi"
+   },
+   {
+    "@language": "ar",
+    "@value": "درجة الثقة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#string"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#frage",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "question"
+   },
+   {
+    "@language": "de",
+    "@value": "Frage"
+   },
+   {
+    "@language": "tr",
+    "@value": "mesele"
+   },
+   {
+    "@language": "ar",
+    "@value": "المسألة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Frage"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#wortVon",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Versabschnitt"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "first word"
+   },
+   {
+    "@language": "de",
+    "@value": "erstes Wort"
+   },
+   {
+    "@language": "tr",
+    "@value": "ilk kelime"
+   },
+   {
+    "@language": "ar",
+    "@value": "الكلمة الأولى"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Stellung",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "stances"
+   },
+   {
+    "@language": "de",
+    "@value": "Stellungen"
+   },
+   {
+    "@language": "tr",
+    "@value": "tutumlar"
+   },
+   {
+    "@language": "ar",
+    "@value": "المواقف"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tAnlass",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Offenbarungsanlass"
+   },
+   {
+    "@language": "tr",
+    "@value": "sebeb-i nüzûl"
+   },
+   {
+    "@language": "en",
+    "@value": "occasion of revelation"
+   },
+   {
+    "@language": "ar",
+    "@value": "سبب النزول"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#vollstaendig",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "false, wenn die Quelle selbst eine Kürzung vermerkt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Eintrag"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "complete"
+   },
+   {
+    "@language": "de",
+    "@value": "vollständig"
+   },
+   {
+    "@language": "tr",
+    "@value": "tam"
+   },
+   {
+    "@language": "ar",
+    "@value": "كامل"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tTabii",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Tabiin-Aussage"
+   },
+   {
+    "@language": "tr",
+    "@value": "maktû'"
+   },
+   {
+    "@language": "en",
+    "@value": "Successor report"
+   },
+   {
+    "@language": "ar",
+    "@value": "مقطوع"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#gegenteilVon",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty",
+   "http://www.w3.org/2002/07/owl#SymmetricProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "opposite of"
+   },
+   {
+    "@language": "de",
+    "@value": "Gegenteil von"
+   },
+   {
+    "@language": "tr",
+    "@value": "zıddı"
+   },
+   {
+    "@language": "ar",
+    "@value": "ضدّ"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#related"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Einheit",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Eine Aussage mit genau einer Funktion innerhalb eines Eintrags. Ohne Textanker keine Einheit."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "وحدة"
+   },
+   {
+    "@language": "tr",
+    "@value": "Birim"
+   },
+   {
+    "@language": "en",
+    "@value": "Unit"
+   },
+   {
+    "@language": "de",
+    "@value": "Einheit"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Werk",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "كتاب"
+   },
+   {
+    "@language": "tr",
+    "@value": "Eser"
+   },
+   {
+    "@language": "en",
+    "@value": "Work"
+   },
+   {
+    "@language": "de",
+    "@value": "Werk"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aHandlung",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Handlung"
+   },
+   {
+    "@language": "tr",
+    "@value": "amel"
+   },
+   {
+    "@language": "en",
+    "@value": "action"
+   },
+   {
+    "@language": "ar",
+    "@value": "عمل"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tKelam",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Glaubenslehre"
+   },
+   {
+    "@language": "tr",
+    "@value": "kelâm / akîde"
+   },
+   {
+    "@language": "en",
+    "@value": "theology"
+   },
+   {
+    "@language": "ar",
+    "@value": "عقيدة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#belegtDurch",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Pflicht: Ohne Beleg gibt es keinen Aspekt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekt"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "supported by"
+   },
+   {
+    "@language": "de",
+    "@value": "belegt durch"
+   },
+   {
+    "@language": "tr",
+    "@value": "delili"
+   },
+   {
+    "@language": "ar",
+    "@value": "دليله"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-munasebet",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "المناسبات والترتيب"
+   },
+   {
+    "@language": "de",
+    "@value": "Zusammenhang und Aufbau"
+   },
+   {
+    "@language": "tr",
+    "@value": "Münâsebet ve tertip"
+   },
+   {
+    "@language": "en",
+    "@value": "Coherence and structure"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Muefessir",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "مفسّر"
+   },
+   {
+    "@language": "tr",
+    "@value": "Müfessir"
+   },
+   {
+    "@language": "en",
+    "@value": "Exegete"
+   },
+   {
+    "@language": "de",
+    "@value": "Exeget"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Person"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#kelam",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "kelâm"
+   },
+   {
+    "@language": "de",
+    "@value": "Glaubenslehre"
+   },
+   {
+    "@language": "en",
+    "@value": "theological"
+   },
+   {
+    "@language": "ar",
+    "@value": "كلامي"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#lugavi",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "lugavî"
+   },
+   {
+    "@language": "de",
+    "@value": "Sprache"
+   },
+   {
+    "@language": "en",
+    "@value": "linguistic"
+   },
+   {
+    "@language": "ar",
+    "@value": "لغوي"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Versabschnitt",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Wortbereich innerhalb eines Verses, Wörter nach QUL-Morphologie gezählt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "مقطع من آية"
+   },
+   {
+    "@language": "tr",
+    "@value": "Âyet bölümü"
+   },
+   {
+    "@language": "en",
+    "@value": "Verse segment"
+   },
+   {
+    "@language": "de",
+    "@value": "Versabschnitt"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+   {
+    "@id": "http://www.semantictafsir.com/ontology/VerseFragment"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#praegtBegriff",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "shapes concept"
+   },
+   {
+    "@language": "de",
+    "@value": "prägt Begriff"
+   },
+   {
+    "@language": "tr",
+    "@value": "şekillendirdiği kavram"
+   },
+   {
+    "@language": "ar",
+    "@value": "يبيّن مفهوم"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#ahkam",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "ahkâm"
+   },
+   {
+    "@language": "de",
+    "@value": "Recht"
+   },
+   {
+    "@language": "en",
+    "@value": "legal"
+   },
+   {
+    "@language": "ar",
+    "@value": "أحكام"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tQuerverweis",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Querverweis"
+   },
+   {
+    "@language": "tr",
+    "@value": "âyetle tefsir"
+   },
+   {
+    "@language": "en",
+    "@value": "cross-reference"
+   },
+   {
+    "@language": "ar",
+    "@value": "تفسير القرآن بالقرآن"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#gemeinfreiBegruendung",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Pflichtfeld: der Satz, warum die Ausgabe frei ist."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Ausgabe"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "public domain rationale"
+   },
+   {
+    "@language": "de",
+    "@value": "Begründung für Gemeinfreiheit"
+   },
+   {
+    "@language": "tr",
+    "@value": "serbest kullanım gerekçesi"
+   },
+   {
+    "@language": "ar",
+    "@value": "سبب الإتاحة العامة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#string"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#sure",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Vers"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "surah"
+   },
+   {
+    "@language": "de",
+    "@value": "Sure"
+   },
+   {
+    "@language": "tr",
+    "@value": "sûre"
+   },
+   {
+    "@language": "ar",
+    "@value": "السورة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Sure"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#zeydi",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Richtung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "zeydî"
+   },
+   {
+    "@language": "de",
+    "@value": "zaiditisch"
+   },
+   {
+    "@language": "en",
+    "@value": "Zaydi"
+   },
+   {
+    "@language": "ar",
+    "@value": "زيدي"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#betrifft",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Vers oder Versabschnitt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "concerns"
+   },
+   {
+    "@language": "de",
+    "@value": "betrifft"
+   },
+   {
+    "@language": "tr",
+    "@value": "ilgili olduğu yer"
+   },
+   {
+    "@language": "ar",
+    "@value": "يتعلّق بـ"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#hatHasiye",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Eintrag"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "has gloss"
+   },
+   {
+    "@language": "de",
+    "@value": "hat Randkommentar"
+   },
+   {
+    "@language": "tr",
+    "@value": "hâşiyesi"
+   },
+   {
+    "@language": "ar",
+    "@value": "له حاشية"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Hasiye"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#lehntAb",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "rejects"
+   },
+   {
+    "@language": "de",
+    "@value": "lehnt ab"
+   },
+   {
+    "@language": "tr",
+    "@value": "reddettiği yorum"
+   },
+   {
+    "@language": "ar",
+    "@value": "يردّ"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Frage",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Streit- oder Sachfrage zu einer Versstelle, auf die mehrere Deutungen antworten (z. B. „Warum steht ʿibâdet vor istiâne?“). Ergänzt am 19.10.2026 aus dem Pilot."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "مسألة"
+   },
+   {
+    "@language": "tr",
+    "@value": "Mesele"
+   },
+   {
+    "@language": "en",
+    "@value": "Question"
+   },
+   {
+    "@language": "de",
+    "@value": "Frage"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#typ",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "unit type"
+   },
+   {
+    "@language": "de",
+    "@value": "Einheitstyp"
+   },
+   {
+    "@language": "tr",
+    "@value": "birim türü"
+   },
+   {
+    "@language": "ar",
+    "@value": "نوع الوحدة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aMissverstaendnis",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Missverständnis"
+   },
+   {
+    "@language": "tr",
+    "@value": "yanlış anlama"
+   },
+   {
+    "@language": "en",
+    "@value": "misconception"
+   },
+   {
+    "@language": "ar",
+    "@value": "فهم خاطئ"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#ausEintrag",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "from entry"
+   },
+   {
+    "@language": "de",
+    "@value": "aus Eintrag"
+   },
+   {
+    "@language": "tr",
+    "@value": "ait olduğu kayıt"
+   },
+   {
+    "@language": "ar",
+    "@value": "من المدخل"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Eintrag"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tLesart",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Lesart"
+   },
+   {
+    "@language": "tr",
+    "@value": "kıraat"
+   },
+   {
+    "@language": "en",
+    "@value": "variant reading"
+   },
+   {
+    "@language": "ar",
+    "@value": "قراءة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#zusammenfassung",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Kurzfassung in tr, en, de. Immer mit Prüfvermerk."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "summary"
+   },
+   {
+    "@language": "de",
+    "@value": "Zusammenfassung"
+   },
+   {
+    "@language": "tr",
+    "@value": "özet"
+   },
+   {
+    "@language": "ar",
+    "@value": "ملخّص"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Eintrag",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Text eines Werks zu einem Versbereich (Tefsir) oder Kapitel (Ahlak-Werk)."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "مدخل"
+   },
+   {
+    "@language": "tr",
+    "@value": "Kayıt"
+   },
+   {
+    "@language": "en",
+    "@value": "Entry"
+   },
+   {
+    "@language": "de",
+    "@value": "Eintrag"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+   {
+    "@id": "http://www.semantictafsir.com/ontology/Commentary"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#sZustimmend",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Stellung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "مؤيِّد"
+   },
+   {
+    "@language": "de",
+    "@value": "zustimmend"
+   },
+   {
+    "@language": "tr",
+    "@value": "onaylayan"
+   },
+   {
+    "@language": "en",
+    "@value": "endorsing"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tMafhumAspekt",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#definition": [
+   {
+    "@language": "de",
+    "@value": "Aussage darüber, was ein Begriff praktisch für einen Menschen heißt."
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Gelebte Bedeutung"
+   },
+   {
+    "@language": "tr",
+    "@value": "pratik mana"
+   },
+   {
+    "@language": "en",
+    "@value": "lived meaning"
+   },
+   {
+    "@language": "ar",
+    "@value": "معنى عملي"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Person",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "شخص"
+   },
+   {
+    "@language": "tr",
+    "@value": "Şahıs"
+   },
+   {
+    "@language": "en",
+    "@value": "Person"
+   },
+   {
+    "@language": "de",
+    "@value": "Person"
+   }
+  ],
+  "http://www.w3.org/2002/07/owl#equivalentClass": [
+   {
+    "@id": "http://www.semantictafsir.com/ontology/Person"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aStufe",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Stufe"
+   },
+   {
+    "@language": "tr",
+    "@value": "makâm / derece"
+   },
+   {
+    "@language": "en",
+    "@value": "station"
+   },
+   {
+    "@language": "ar",
+    "@value": "مقام"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#pVerworfen",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Pruefstatus"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "مرفوض"
+   },
+   {
+    "@language": "de",
+    "@value": "verworfen"
+   },
+   {
+    "@language": "tr",
+    "@value": "reddedildi"
+   },
+   {
+    "@language": "en",
+    "@value": "rejected"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#vertritt",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "holds"
+   },
+   {
+    "@language": "de",
+    "@value": "vertritt"
+   },
+   {
+    "@language": "tr",
+    "@value": "benimsediği yorum"
+   },
+   {
+    "@language": "ar",
+    "@value": "يتبنّى"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#kapitel",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Eintrag"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "chapter"
+   },
+   {
+    "@language": "de",
+    "@value": "Kapitel"
+   },
+   {
+    "@language": "tr",
+    "@value": "bölüm"
+   },
+   {
+    "@language": "ar",
+    "@value": "الباب"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#string"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tBedeutung",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Bedeutung"
+   },
+   {
+    "@language": "tr",
+    "@value": "mana / te'vîl"
+   },
+   {
+    "@language": "en",
+    "@value": "meaning"
+   },
+   {
+    "@language": "ar",
+    "@value": "معنى"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#wortlaut",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Arabischer Originalwortlaut der Einheit."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "original wording"
+   },
+   {
+    "@language": "de",
+    "@value": "Wortlaut"
+   },
+   {
+    "@language": "tr",
+    "@value": "asıl metin"
+   },
+   {
+    "@language": "ar",
+    "@value": "النص الأصلي"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aspekttyp",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekt"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "aspect type"
+   },
+   {
+    "@language": "de",
+    "@value": "Aspekttyp"
+   },
+   {
+    "@language": "tr",
+    "@value": "yön türü"
+   },
+   {
+    "@language": "ar",
+    "@value": "نوع الجانب"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Sure",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "سورة"
+   },
+   {
+    "@language": "tr",
+    "@value": "Sure"
+   },
+   {
+    "@language": "en",
+    "@value": "Surah"
+   },
+   {
+    "@language": "de",
+    "@value": "Sure"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tMantuk",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Mantûk"
+   },
+   {
+    "@language": "tr",
+    "@value": "mantûk"
+   },
+   {
+    "@language": "en",
+    "@value": "explicit meaning"
+   },
+   {
+    "@language": "ar",
+    "@value": "منطوق"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#fuehrtZu",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "leads to"
+   },
+   {
+    "@language": "de",
+    "@value": "führt zu"
+   },
+   {
+    "@language": "tr",
+    "@value": "götürdüğü kavram"
+   },
+   {
+    "@language": "ar",
+    "@value": "يؤدّي إلى"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#related"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#sAblehnend",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Stellung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "رادّ"
+   },
+   {
+    "@language": "de",
+    "@value": "ablehnend"
+   },
+   {
+    "@language": "tr",
+    "@value": "reddeden"
+   },
+   {
+    "@language": "en",
+    "@value": "rejecting"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#fasstZusammen",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Zusammenfassung"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "summarizes"
+   },
+   {
+    "@language": "de",
+    "@value": "fasst zusammen"
+   },
+   {
+    "@language": "tr",
+    "@value": "özetlediği kavram"
+   },
+   {
+    "@language": "ar",
+    "@value": "يلخّص"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#vorkommen",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Vers oder Versabschnitt, an dem der Begriff erscheint."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "occurrence"
+   },
+   {
+    "@language": "de",
+    "@value": "Vorkommen"
+   },
+   {
+    "@language": "tr",
+    "@value": "geçtiği yer"
+   },
+   {
+    "@language": "ar",
+    "@value": "موضع وروده"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-sprache",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "اللغة والإعراب"
+   },
+   {
+    "@language": "de",
+    "@value": "Sprache und Grammatik"
+   },
+   {
+    "@language": "tr",
+    "@value": "Dil ve i'râb"
+   },
+   {
+    "@language": "en",
+    "@value": "Language and grammar"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-bedeutung",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "المعنى"
+   },
+   {
+    "@language": "de",
+    "@value": "Bedeutung"
+   },
+   {
+    "@language": "tr",
+    "@value": "Mana"
+   },
+   {
+    "@language": "en",
+    "@value": "Meaning"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aHindernis",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Hindernis"
+   },
+   {
+    "@language": "tr",
+    "@value": "engel"
+   },
+   {
+    "@language": "en",
+    "@value": "obstacle"
+   },
+   {
+    "@language": "ar",
+    "@value": "مانع"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#erklaert",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Eintrag"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "explains"
+   },
+   {
+    "@language": "de",
+    "@value": "erklärt"
+   },
+   {
+    "@language": "tr",
+    "@value": "açıkladığı âyet"
+   },
+   {
+    "@language": "ar",
+    "@value": "يفسّر"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Vers"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aVoraussetzung",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Voraussetzung"
+   },
+   {
+    "@language": "tr",
+    "@value": "şart"
+   },
+   {
+    "@language": "en",
+    "@value": "precondition"
+   },
+   {
+    "@language": "ar",
+    "@value": "شرط"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#isari",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "işârî"
+   },
+   {
+    "@language": "de",
+    "@value": "mystisch"
+   },
+   {
+    "@language": "en",
+    "@value": "allusive"
+   },
+   {
+    "@language": "ar",
+    "@value": "إشاري"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aspektVon",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekt"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "aspect of"
+   },
+   {
+    "@language": "de",
+    "@value": "Aspekt von"
+   },
+   {
+    "@language": "tr",
+    "@value": "ait olduğu kavram"
+   },
+   {
+    "@language": "ar",
+    "@value": "جانب من"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tMefhumMuhalefe",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Mefhûmu'l-muhâlefe"
+   },
+   {
+    "@language": "tr",
+    "@value": "mefhûmu'l-muhâlefe"
+   },
+   {
+    "@language": "en",
+    "@value": "argumentum e contrario"
+   },
+   {
+    "@language": "ar",
+    "@value": "مفهوم المخالفة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-akide",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "العقيدة والكلام"
+   },
+   {
+    "@language": "de",
+    "@value": "Glaubenslehre"
+   },
+   {
+    "@language": "tr",
+    "@value": "Akaid ve kelâm"
+   },
+   {
+    "@language": "en",
+    "@value": "Theology"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Aspekttyp",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "aspect types"
+   },
+   {
+    "@language": "de",
+    "@value": "Aspekttypen"
+   },
+   {
+    "@language": "tr",
+    "@value": "yön türleri"
+   },
+   {
+    "@language": "ar",
+    "@value": "أنواع الجوانب"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Zusammenfassung",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Lesbarer Text „Was heißt das für mich?“. Nie als Gelehrtenwort ausgeben."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "de",
+    "@value": "Zusammenfassung"
+   },
+   {
+    "@language": "tr",
+    "@value": "Özet"
+   },
+   {
+    "@language": "en",
+    "@value": "Synthesis"
+   },
+   {
+    "@language": "ar",
+    "@value": "خلاصة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#ausgabeVon",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Ausgabe"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "edition of"
+   },
+   {
+    "@language": "de",
+    "@value": "Ausgabe von"
+   },
+   {
+    "@language": "tr",
+    "@value": "nüshası olduğu eser"
+   },
+   {
+    "@language": "ar",
+    "@value": "نسخة من"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Werk"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aFrucht",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Frucht"
+   },
+   {
+    "@language": "tr",
+    "@value": "semere"
+   },
+   {
+    "@language": "en",
+    "@value": "fruit"
+   },
+   {
+    "@language": "ar",
+    "@value": "ثمرة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#mutezili",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Richtung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "mu'tezilî"
+   },
+   {
+    "@language": "de",
+    "@value": "mutazilitisch"
+   },
+   {
+    "@language": "en",
+    "@value": "Muʿtazili"
+   },
+   {
+    "@language": "ar",
+    "@value": "معتزلي"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-ahkam",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "الأحكام والصلاة"
+   },
+   {
+    "@language": "de",
+    "@value": "Recht und Gebet"
+   },
+   {
+    "@language": "tr",
+    "@value": "Ahkâm ve namaz"
+   },
+   {
+    "@language": "en",
+    "@value": "Law and prayer"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#themenbereich",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Frage"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "topic area"
+   },
+   {
+    "@language": "de",
+    "@value": "Themenbereich"
+   },
+   {
+    "@language": "tr",
+    "@value": "konu alanı"
+   },
+   {
+    "@language": "ar",
+    "@value": "المجال"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aGegenteil",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Gegenteil, Verfehlung"
+   },
+   {
+    "@language": "tr",
+    "@value": "zıt"
+   },
+   {
+    "@language": "en",
+    "@value": "opposite"
+   },
+   {
+    "@language": "ar",
+    "@value": "ضد"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#wortBis",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Versabschnitt"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "last word"
+   },
+   {
+    "@language": "de",
+    "@value": "letztes Wort"
+   },
+   {
+    "@language": "tr",
+    "@value": "son kelime"
+   },
+   {
+    "@language": "ar",
+    "@value": "الكلمة الأخيرة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Einheitstyp",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "أنواع الوحدات"
+   },
+   {
+    "@language": "de",
+    "@value": "Einheitstyp"
+   },
+   {
+    "@language": "tr",
+    "@value": "Birim türü"
+   },
+   {
+    "@language": "en",
+    "@value": "Unit type"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#hatKette",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "has chain of transmission"
+   },
+   {
+    "@language": "de",
+    "@value": "hat Überliefererkette"
+   },
+   {
+    "@language": "tr",
+    "@value": "isnadı"
+   },
+   {
+    "@language": "ar",
+    "@value": "له إسناد"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.semantichadith.com/ontology/NarratorChain"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-mafhum",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "المعنى العملي"
+   },
+   {
+    "@language": "de",
+    "@value": "Gelebte Bedeutung"
+   },
+   {
+    "@language": "tr",
+    "@value": "Pratik mana ve ahlâk"
+   },
+   {
+    "@language": "en",
+    "@value": "Lived meaning"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Gattung",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "أنواع التفسير"
+   },
+   {
+    "@language": "de",
+    "@value": "Gattung"
+   },
+   {
+    "@language": "tr",
+    "@value": "Tür"
+   },
+   {
+    "@language": "en",
+    "@value": "Genre"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#AhlakWerk",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Nach Begriffen statt nach Versen geordnet, z. B. İhyâ, Medâricü's-Sâlikîn, Risâle."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "كتاب في الأخلاق والتزكية"
+   },
+   {
+    "@language": "tr",
+    "@value": "Ahlak/tasavvuf eseri"
+   },
+   {
+    "@language": "en",
+    "@value": "Ethics/spirituality work"
+   },
+   {
+    "@language": "de",
+    "@value": "Ahlak-/Tasavvuf-Werk"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Werk"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-ulum",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "علوم القرآن"
+   },
+   {
+    "@language": "de",
+    "@value": "Koranwissenschaft (Versstatus, Herkunft)"
+   },
+   {
+    "@language": "tr",
+    "@value": "Kur'an ilimleri (âyet oluşu, nüzul)"
+   },
+   {
+    "@language": "en",
+    "@value": "Qur'anic sciences (verse status, origin)"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tSiir",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Dichterbeleg"
+   },
+   {
+    "@language": "tr",
+    "@value": "şiir şâhidi"
+   },
+   {
+    "@language": "en",
+    "@value": "poetic evidence"
+   },
+   {
+    "@language": "ar",
+    "@value": "شاهد شعري"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#ahlak",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "ahlâk / tasavvuf"
+   },
+   {
+    "@language": "de",
+    "@value": "Ethik / Spiritualität"
+   },
+   {
+    "@language": "en",
+    "@value": "ethics / spirituality"
+   },
+   {
+    "@language": "ar",
+    "@value": "أخلاق وتزكية"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Themenbereich",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "مجالات المسائل"
+   },
+   {
+    "@language": "de",
+    "@value": "Themenbereich"
+   },
+   {
+    "@language": "tr",
+    "@value": "Konu alanı"
+   },
+   {
+    "@language": "en",
+    "@value": "Topic area"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tSahabi",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Sahabi-Aussage"
+   },
+   {
+    "@language": "tr",
+    "@value": "mevkûf"
+   },
+   {
+    "@language": "en",
+    "@value": "Companion report"
+   },
+   {
+    "@language": "ar",
+    "@value": "موقوف"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Ontology"
+  ],
+  "http://purl.org/dc/terms/created": [
+   {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-10-19"
+   }
+  ],
+  "http://purl.org/dc/terms/creator": [
+   {
+    "@value": "Kürşat Çifçi"
+   }
+  ],
+  "http://purl.org/dc/terms/description": [
+   {
+    "@language": "en",
+    "@value": "Ontology for classical Quran commentaries (tafsir): works and editions, source-anchored statement units, cross-work interpretations and questions, concepts in their lived meaning (mafhūm), and review status. Extends SemanticTafsir."
+   }
+  ],
+  "http://purl.org/dc/terms/license": [
+   {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "http://purl.org/dc/terms/modified": [
+   {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-10-21"
+   }
+  ],
+  "http://purl.org/dc/terms/source": [
+   {
+    "@id": "https://github.com/talhaahmed884/SemanticTafsirKG"
+   }
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "ar",
+    "@value": "مفاهيم القرآن في تفاسير علماء الأمة"
+   },
+   {
+    "@language": "en",
+    "@value": "Mafāhīm: Quranic concepts in classical tafsir"
+   },
+   {
+    "@language": "tr",
+    "@value": "Mafāhīm: Kur'an kavramları klasik tefsirlerde"
+   },
+   {
+    "@language": "de",
+    "@value": "Mafāhīm: Koranbegriffe in den klassischen Tefsiren"
+   }
+  ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+   {
+    "@value": "mfh"
+   }
+  ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri": [
+   {
+    "@value": "https://w3id.org/mafahim/ontology#"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Erweitert SemanticTafsir um mehrere Werke, zerlegte Aussage-Einheiten, werkübergreifende Deutungen, gelebte Begriffe (Mafhûm) und Prüfvermerke."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+   {
+    "@id": "https://github.com/kuersatcifci/mafahim"
+   }
+  ],
+  "http://www.w3.org/2002/07/owl#versionIRI": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology/0.1.0"
+   }
+  ],
+  "http://www.w3.org/2002/07/owl#versionInfo": [
+   {
+    "@value": "0.1.0 (draft)"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tTercih",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Abwägung des Autors"
+   },
+   {
+    "@language": "tr",
+    "@value": "tercîh"
+   },
+   {
+    "@language": "en",
+    "@value": "author's preference"
+   },
+   {
+    "@language": "ar",
+    "@value": "ترجيح"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#verfasstVon",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Werk"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "written by"
+   },
+   {
+    "@language": "de",
+    "@value": "verfasst von"
+   },
+   {
+    "@language": "tr",
+    "@value": "müellifi"
+   },
+   {
+    "@language": "ar",
+    "@value": "مؤلّفه"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Person"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tSprache",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Sprache"
+   },
+   {
+    "@language": "tr",
+    "@value": "i'râb / lugat / belâgat"
+   },
+   {
+    "@language": "en",
+    "@value": "language"
+   },
+   {
+    "@language": "ar",
+    "@value": "لغة وإعراب وبلاغة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#richtung",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Bei Werk und Person. Wird in jeder Ansicht und jeder MCP-Antwort angezeigt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "school"
+   },
+   {
+    "@language": "de",
+    "@value": "Richtung"
+   },
+   {
+    "@language": "tr",
+    "@value": "ekol"
+   },
+   {
+    "@language": "ar",
+    "@value": "المذهب"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#deutungZu",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "interpretation of"
+   },
+   {
+    "@language": "de",
+    "@value": "Deutung zu"
+   },
+   {
+    "@language": "tr",
+    "@value": "yorumladığı yer"
+   },
+   {
+    "@language": "ar",
+    "@value": "تفسير لـ"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#zugeschrieben",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Wer die Aussage gemacht hat (z. B. İbn Abbas), nicht der Müfessir, der sie aufschreibt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "attributed to"
+   },
+   {
+    "@language": "de",
+    "@value": "zugeschrieben"
+   },
+   {
+    "@language": "tr",
+    "@value": "nisbet edilen"
+   },
+   {
+    "@language": "ar",
+    "@value": "منسوب إلى"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Person"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#todesjahrHicri",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Person"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "death year (Hijri)"
+   },
+   {
+    "@language": "de",
+    "@value": "Todesjahr (Hidschri)"
+   },
+   {
+    "@language": "tr",
+    "@value": "vefat yılı (hicrî)"
+   },
+   {
+    "@language": "ar",
+    "@value": "سنة الوفاة (هجري)"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-kiraat",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "القراءات"
+   },
+   {
+    "@language": "de",
+    "@value": "Lesarten"
+   },
+   {
+    "@language": "tr",
+    "@value": "Kıraatler"
+   },
+   {
+    "@language": "en",
+    "@value": "Variant readings"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aAlltag",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Alltagsbezug"
+   },
+   {
+    "@language": "tr",
+    "@value": "gündelik hayat"
+   },
+   {
+    "@language": "en",
+    "@value": "everyday life"
+   },
+   {
+    "@language": "ar",
+    "@value": "الحياة اليومية"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tIsari",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Mystische Deutung"
+   },
+   {
+    "@language": "tr",
+    "@value": "işârî"
+   },
+   {
+    "@language": "en",
+    "@value": "allusive reading"
+   },
+   {
+    "@language": "ar",
+    "@value": "إشاري"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#gattung",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Werk"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "genre"
+   },
+   {
+    "@language": "de",
+    "@value": "Gattung"
+   },
+   {
+    "@language": "tr",
+    "@value": "tür"
+   },
+   {
+    "@language": "ar",
+    "@value": "النوع"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#th-isari",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Themenbereich"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "التفسير الإشاري"
+   },
+   {
+    "@language": "de",
+    "@value": "İşârî-Deutung"
+   },
+   {
+    "@language": "tr",
+    "@value": "İşârî tefsir"
+   },
+   {
+    "@language": "en",
+    "@value": "Allusive reading"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#diraye",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "dirâye"
+   },
+   {
+    "@language": "de",
+    "@value": "Abwägung"
+   },
+   {
+    "@language": "en",
+    "@value": "reasoning-based"
+   },
+   {
+    "@language": "ar",
+    "@value": "بالرأي"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#sunni",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Richtung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "sünnî"
+   },
+   {
+    "@language": "de",
+    "@value": "sunnitisch"
+   },
+   {
+    "@language": "en",
+    "@value": "Sunni"
+   },
+   {
+    "@language": "ar",
+    "@value": "سني"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#ankerBis",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "anchor end"
+   },
+   {
+    "@language": "de",
+    "@value": "Anker Ende"
+   },
+   {
+    "@language": "tr",
+    "@value": "metin çapası sonu"
+   },
+   {
+    "@language": "ar",
+    "@value": "نهاية الموضع"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Tefsir",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "تفسير"
+   },
+   {
+    "@language": "tr",
+    "@value": "Tefsir"
+   },
+   {
+    "@language": "en",
+    "@value": "Tafsir"
+   },
+   {
+    "@language": "de",
+    "@value": "Tefsir"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Werk"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#ankerVon",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#DatatypeProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Zeichenposition im bereinigten Eintragstext (Beginn)."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "anchor start"
+   },
+   {
+    "@language": "de",
+    "@value": "Anker Beginn"
+   },
+   {
+    "@language": "tr",
+    "@value": "metin çapası başı"
+   },
+   {
+    "@language": "ar",
+    "@value": "بداية الموضع"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Mafhum",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Ein Koranbegriff in seiner konzeptionellen, gelebten Bedeutung: was er praktisch für einen Menschen heißt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "مفهوم"
+   },
+   {
+    "@language": "tr",
+    "@value": "Mefhûm"
+   },
+   {
+    "@language": "en",
+    "@value": "Concept (lived meaning)"
+   },
+   {
+    "@language": "de",
+    "@value": "Mafhûm (gelebte Bedeutung)"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#zitiert",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "cites"
+   },
+   {
+    "@language": "de",
+    "@value": "zitiert"
+   },
+   {
+    "@language": "tr",
+    "@value": "alıntıladığı eser"
+   },
+   {
+    "@language": "ar",
+    "@value": "ينقل عن"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Werk"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Vers",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "آية"
+   },
+   {
+    "@language": "tr",
+    "@value": "Âyet"
+   },
+   {
+    "@language": "en",
+    "@value": "Verse"
+   },
+   {
+    "@language": "de",
+    "@value": "Vers"
+   }
+  ],
+  "http://www.w3.org/2002/07/owl#equivalentClass": [
+   {
+    "@id": "http://www.semantictafsir.com/ontology/Verse"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#siiImami",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Richtung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "şîî imâmî"
+   },
+   {
+    "@language": "de",
+    "@value": "schiitisch-imamitisch"
+   },
+   {
+    "@language": "en",
+    "@value": "Shia Imami"
+   },
+   {
+    "@language": "ar",
+    "@value": "شيعي إمامي"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#rivaye",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "rivâye"
+   },
+   {
+    "@language": "de",
+    "@value": "Überlieferung"
+   },
+   {
+    "@language": "en",
+    "@value": "transmission-based"
+   },
+   {
+    "@language": "ar",
+    "@value": "بالمأثور"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#stufeVon",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "station of"
+   },
+   {
+    "@language": "de",
+    "@value": "Stufe von"
+   },
+   {
+    "@language": "tr",
+    "@value": "mertebesi olduğu kavram"
+   },
+   {
+    "@language": "ar",
+    "@value": "مرتبة من"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#broader"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#setztVoraus",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "presupposes"
+   },
+   {
+    "@language": "de",
+    "@value": "setzt voraus"
+   },
+   {
+    "@language": "tr",
+    "@value": "ön şartı"
+   },
+   {
+    "@language": "ar",
+    "@value": "يتوقّف على"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Mafhum"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#related"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#stellung",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "stance"
+   },
+   {
+    "@language": "de",
+    "@value": "Stellung"
+   },
+   {
+    "@language": "tr",
+    "@value": "tutum"
+   },
+   {
+    "@language": "ar",
+    "@value": "الموقف"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tNesh",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Abrogation"
+   },
+   {
+    "@language": "tr",
+    "@value": "nesh"
+   },
+   {
+    "@language": "en",
+    "@value": "abrogation"
+   },
+   {
+    "@language": "ar",
+    "@value": "نسخ"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#pGeprueft",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Pruefstatus"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "مراجَع"
+   },
+   {
+    "@language": "de",
+    "@value": "geprüft"
+   },
+   {
+    "@language": "tr",
+    "@value": "kontrol edildi"
+   },
+   {
+    "@language": "en",
+    "@value": "reviewed"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Hasiye",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Klassischer Randkommentar zu einem Werk, z. B. İbn el-Müneyyirs el-İntisâf zum Keşşâf."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "حاشية"
+   },
+   {
+    "@language": "tr",
+    "@value": "Hâşiye"
+   },
+   {
+    "@language": "en",
+    "@value": "Gloss"
+   },
+   {
+    "@language": "de",
+    "@value": "Randkommentar"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tIsrailiyat",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "İsrailiyat"
+   },
+   {
+    "@language": "tr",
+    "@value": "isrâiliyyât"
+   },
+   {
+    "@language": "en",
+    "@value": "Isrāʾīliyyāt"
+   },
+   {
+    "@language": "ar",
+    "@value": "إسرائيليات"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tHukum",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Rechtsfolge"
+   },
+   {
+    "@language": "tr",
+    "@value": "hüküm"
+   },
+   {
+    "@language": "en",
+    "@value": "legal ruling"
+   },
+   {
+    "@language": "ar",
+    "@value": "حكم"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aVorbild",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Vorbild"
+   },
+   {
+    "@language": "tr",
+    "@value": "kıssa / örnek"
+   },
+   {
+    "@language": "en",
+    "@value": "exemplar"
+   },
+   {
+    "@language": "ar",
+    "@value": "قدوة"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Ausgabe",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "نسخة رقمية"
+   },
+   {
+    "@language": "tr",
+    "@value": "Dijital nüsha"
+   },
+   {
+    "@language": "en",
+    "@value": "Digital edition"
+   },
+   {
+    "@language": "de",
+    "@value": "Digitale Ausgabe"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#stehtImGegensatzZu",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty",
+   "http://www.w3.org/2002/07/owl#SymmetricProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "contrasts with"
+   },
+   {
+    "@language": "de",
+    "@value": "steht im Gegensatz zu"
+   },
+   {
+    "@language": "tr",
+    "@value": "karşıt olduğu yorum"
+   },
+   {
+    "@language": "ar",
+    "@value": "يقابل"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Pruefstatus",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "review status values"
+   },
+   {
+    "@language": "de",
+    "@value": "Prüfstatus"
+   },
+   {
+    "@language": "tr",
+    "@value": "kontrol durumları"
+   },
+   {
+    "@language": "ar",
+    "@value": "حالات المراجعة"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#munasebet",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Gattung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "tr",
+    "@value": "münâsebet"
+   },
+   {
+    "@language": "de",
+    "@value": "Zusammenhang"
+   },
+   {
+    "@language": "en",
+    "@value": "coherence"
+   },
+   {
+    "@language": "ar",
+    "@value": "مناسبات"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#Deutung",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#Class"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment": [
+   {
+    "@language": "de",
+    "@value": "Inhaltliche Position zu einem Versabschnitt, unabhängig davon, wer sie aufschreibt."
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "ar",
+    "@value": "قول تفسيري"
+   },
+   {
+    "@language": "tr",
+    "@value": "Yorum"
+   },
+   {
+    "@language": "en",
+    "@value": "Interpretation"
+   },
+   {
+    "@language": "de",
+    "@value": "Deutung"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#status",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "review status"
+   },
+   {
+    "@language": "de",
+    "@value": "Prüfstatus"
+   },
+   {
+    "@language": "tr",
+    "@value": "kontrol durumu"
+   },
+   {
+    "@language": "ar",
+    "@value": "حالة المراجعة"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#aHerz",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Aspekttyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Herzenszustand"
+   },
+   {
+    "@language": "tr",
+    "@value": "hâl"
+   },
+   {
+    "@language": "en",
+    "@value": "state of the heart"
+   },
+   {
+    "@language": "ar",
+    "@value": "حال"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#erwaehnt",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheit"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "mentions"
+   },
+   {
+    "@language": "de",
+    "@value": "erwähnt"
+   },
+   {
+    "@language": "tr",
+    "@value": "zikrettiği yorum"
+   },
+   {
+    "@language": "ar",
+    "@value": "يذكر"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Deutung"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#eintragAus",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Eintrag"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "entry from"
+   },
+   {
+    "@language": "de",
+    "@value": "Eintrag aus"
+   },
+   {
+    "@language": "tr",
+    "@value": "ait olduğu nüsha"
+   },
+   {
+    "@language": "ar",
+    "@value": "مدخل من"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Ausgabe"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#vers",
+  "@type": [
+   "http://www.w3.org/2002/07/owl#ObjectProperty"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#domain": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Versabschnitt"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "verse"
+   },
+   {
+    "@language": "de",
+    "@value": "Vers"
+   },
+   {
+    "@language": "tr",
+    "@value": "âyet"
+   },
+   {
+    "@language": "ar",
+    "@value": "الآية"
+   }
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#range": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Vers"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#tHadith",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Einheitstyp"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "de",
+    "@value": "Hadith"
+   },
+   {
+    "@language": "tr",
+    "@value": "merfû' hadis"
+   },
+   {
+    "@language": "en",
+    "@value": "prophetic hadith"
+   },
+   {
+    "@language": "ar",
+    "@value": "حديث مرفوع"
+   }
+  ]
+ },
+ {
+  "@id": "https://w3id.org/mafahim/ontology#pVorschlag",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote": [
+   {
+    "@language": "en",
+    "@value": "ar label: unreviewed suggestion"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "https://w3id.org/mafahim/ontology#Pruefstatus"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "ar",
+    "@value": "اقتراح آلي غير مراجَع"
+   },
+   {
+    "@language": "de",
+    "@value": "KI-Vorschlag, ungeprüft"
+   },
+   {
+    "@language": "tr",
+    "@value": "YZ önerisi, kontrol edilmedi"
+   },
+   {
+    "@language": "en",
+    "@value": "AI suggestion, unreviewed"
+   }
+  ]
+ }
+]

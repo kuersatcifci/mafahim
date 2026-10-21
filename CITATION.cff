@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this ontology, please cite it as below."
+title: "Mafāhīm: Quranic concepts in classical tafsir (ontology)"
+version: 0.1.0
+date-released: 2026-10-21
+license: CC-BY-4.0
+repository-code: "https://github.com/kuersatcifci/mafahim"
+url: "https://w3id.org/mafahim/ontology"
+authors:
+  - family-names: "Çifçi"
+    given-names: "Kürşat"
+    website: "https://kuersatcifci.de"
+keywords:
+  - ontology
+  - tafsir
+  - quran
+  - knowledge graph
+  - linked data
+  - digital humanities
+references:
+  - type: software
+    title: "SemanticTafsirKG"
+    url: "https://github.com/talhaahmed884/SemanticTafsirKG"
